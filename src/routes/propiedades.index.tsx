@@ -1,0 +1,5 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { Site, Hero, SectionHeading, PropertyCard, Values } from '@/components/travel/site';
+import { properties, images, pageHead } from '@/lib/travel-data';
+export const Route=createFileRoute('/propiedades/')({head:()=>pageHead('Alojamientos en Arequipa','Descubre dos hostales y una casa rural para vivir Arequipa a tu manera. Consulta tarifas y disponibilidad directamente.'),component:Properties});
+function Properties(){return <Site><Hero title="Tu lugar en Arequipa." eyebrow="Hospédate con esencia local" description="En el corazón de la ciudad o lejos del ruido. Encuentra ese lugar al que querrás volver." image={images.stay}/><section className="section page-width"><SectionHeading eyebrow="Tres formas de quedarte" title="Siéntete como en casa."/><div className="three-grid">{properties.map(item=><PropertyCard item={item} key={item.slug}/>)}</div><p className="editorial-note">Nombres, imágenes y servicios de los alojamientos son referenciales. Tarifas y ubicaciones exactas pendientes de confirmación.</p></section><Values/></Site>}
