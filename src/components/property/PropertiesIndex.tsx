@@ -1,0 +1,8 @@
+import { Link } from '@tanstack/react-router';
+import { ArrowUpRight, MapPin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Site, SectionHeading, Values } from '@/components/travel/site';
+import { properties } from '@/data/properties';
+export function PropertiesIndex() {
+  return <div className="property-shell"><Site><section className="property-index-title page-width"><div className="eyebrow text-primary">Centro Histórico · Yanahuara · Yura</div><h1>Tu lugar en Arequipa.</h1><p>Tres alojamientos, tres formas de vivir la ciudad y sus paisajes.</p></section><section className="section page-width property-list-section"><SectionHeading eyebrow="Encuentra tu estancia" title="Tres lugares. Mil historias."/><div className="three-grid">{properties.map(p => <article className="editorial-card" key={p.slug}><Link to="/propiedades/$slug" params={{slug:p.slug}}><div className="card-media"><img src={p.heroImage} alt={`Foto de ejemplo de ${p.name}`} width="1600" height="700" loading="lazy"/><span className="image-label">{p.category}</span></div><div className="card-location"><MapPin size={13}/>{p.zone}</div><h3>{p.name}</h3></Link><p className="card-description">{p.description}</p><div className="card-bottom"><span>{p.rooms.length} {p.category === 'Glamping' ? 'cabañas' : 'habitaciones'}</span><Button asChild variant="editorial" size="sm"><Link to="/propiedades/$slug" params={{slug:p.slug}}>Ver propiedad<ArrowUpRight/></Link></Button></div></article>)}</div><p className="editorial-note">Fotos de ejemplo. Configuración de habitaciones pendiente de validación; tarifas y disponibilidad sujetas a confirmación.</p></section><Values/></Site></div>;
+}

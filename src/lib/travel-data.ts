@@ -2,12 +2,9 @@ import arequipa from '@/assets/arequipa.jpg';
 import stay from '@/assets/stay.jpg';
 import colca from '@/assets/colca.jpg';
 import catalina from '@/assets/catalina.jpg';
+import { properties as lodgingProperties } from '@/data/properties';
 export const images = { arequipa, stay, colca, catalina };
-export const properties = [
- { slug:'hostal-sillar', name:'Hostal Sillar', location:'Centro Histórico, Arequipa', category:'En el corazón de la ciudad', image:stay, description:'El encanto del sillar, patios llenos de luz y la Ciudad Blanca a unos pasos.', long:'Un refugio con espíritu arequipeño. Descubre las calles del Centro Histórico, la Plaza de Armas y los rincones de Santa Catalina desde una base acogedora. Una propuesta de hospedaje para quienes prefieren conocer la ciudad a su propio ritmo.' },
- { slug:'hostal-miraflores', name:'Hostal Miraflores', location:'Miraflores, Arequipa', category:'Tu rincón local', image:stay, description:'Un ambiente cercano y tranquilo para sentirte parte de Arequipa.', long:'La vida cotidiana de Arequipa también tiene historias que contar. Nuestra propuesta en Miraflores combina tranquilidad y una mirada local, ideal para descansar entre paseos y descubrir la ciudad más allá de sus postales.' },
- { slug:'casa-del-valle', name:'Casa del Valle', location:'Entorno rural, Arequipa', category:'Escápate de lo cotidiano', image:stay, description:'Más espacio, más calma. Una casa para compartir y reconectar con lo esencial.', long:'Una propuesta de casa rural para vivir los días sin prisa. Espacios para compartir, naturaleza y el horizonte de los Andes: una alternativa para familias y viajeros que buscan una estancia más independiente.' },
-];
+export const properties = lodgingProperties.map(p => ({...p, location:`${p.zone}, Arequipa`, image:p.heroImage}));
 export const tours = [
  {slug:'colca',name:'Colca, donde vuelan los cóndores',location:'Cañón del Colca',category:'Naturaleza',duration:'1 o 2 días',image:colca,description:'Entre montañas infinitas y pueblos llenos de historia. Un encuentro con la grandeza de los Andes.',long:'Recorre el Valle del Colca, sus terrazas agrícolas y sus paisajes andinos. La Cruz del Cóndor ofrece la oportunidad de observar estas aves en su hábitat natural; los avistamientos dependen de las condiciones del día.'},
  {slug:'city-tour',name:'Los secretos de la Ciudad Blanca',location:'Centro Histórico',category:'Cultura',duration:'Medio día',image:catalina,description:'Calles de sillar, patios de color y las historias que solo un local conoce.',long:'Un recorrido por el corazón de Arequipa: la Plaza de Armas, la arquitectura colonial y los alrededores del Monasterio de Santa Catalina. Sus muros de colores cuentan siglos de historia. Consulta las entradas y visitas incluidas.'},

@@ -97,6 +97,20 @@ Registro completo de cambios, diagnósticos, verificaciones y procedimientos de 
 - **Cómo revertir:** `git checkout a2f7726 -- src/components/travel/site.tsx && rm src/assets/logo.jpg`
 - **Resultado:** `npx tsc --noEmit` completó con 0 errores (código de salida 0). Commit `64151c8`.
 
+### Cambio 09
+- **Fecha:** 2026-10-17
+- **Archivos:** `src/components/property/*`, `src/data/properties.ts`, `src/lib/placeholders.ts`, `src/lib/whatsapp.ts`, `src/routes/propiedades.*`, `src/components/ui/button.tsx`, `src/styles.css`, `src/components/travel/booking-bar.tsx`, `src/test/properties.test.ts`
+- **Qué se cambió:** Integración de la actualización de contenidos y características creadas en Lovable:
+  1. Modelo de datos documentados y tipos para alojamientos reales (`Hostal Viajeros Arequipa`, `Casa Junto Al Rio`, `Catarata Capua`) con habitaciones y cabañas documentadas.
+  2. Componentes de UI: modales interactivos para cada habitación, galería de fotos, lista de servicios/recursos y botón dinámico para consultar y reservar por WhatsApp.
+  3. Variante de botón `whatsapp` en `button.tsx` y estilos CSS integrados en `styles.css`.
+  4. Selector de barra de reservas (`booking-bar.tsx`) conectado a las propiedades reales.
+  5. Preservación y redirección transparente de URLs antiguas (`hostal-sillar`, `hostal-miraflores`, `casa-del-valle`).
+  6. Suite de 17 tests unitarios en `properties.test.ts` cubriendo integridad de datos y formato de mensajes WhatsApp.
+- **Motivo / Evidencia:** Solicitud del usuario de incorporar las actualizaciones generadas en Lovable preservando la arquitectura SPA local desacoplada.
+- **Cómo revertir:** `git checkout 2510077 -- . && rm -rf src/components/property src/data src/lib/placeholders.ts src/lib/whatsapp.ts src/test/properties.test.ts`
+- **Resultado:** 18 de 18 tests aprobados, TypeScript sin errores, build en 3.91s y HTTP 200 en todas las rutas locales.
+
 ---
 
 ## Verificación Funcional y Pruebas
