@@ -1,0 +1,4 @@
+Listo, cree las caretas conforme indicado, quedaroon asi: 
+/public/images/general/ (conten las imgenes que deben quedar en las partes generales del website, son imagenes de la ciudad de Arequipa, use en fotos generales)
+/public/images/propiedades/ Ahi estan las fotos de las 3 propriedades, son ellas: cajajuntoalrio (Son las imagenes de la casa junto al rio) 
+Cada propiedade lleva el nombre de la propiedad correspondente, algunas imagenes no fue cpz de disminuir mucho el tamano pero igual puede usarlas, ademas, intente mantener las imagenes con buena visualizacion, en general que queden bien en los bloques que debe estar las imagenes

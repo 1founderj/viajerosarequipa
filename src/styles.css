@@ -36,6 +36,8 @@ h1,h2,h3,p { margin:0; } a { text-decoration:none; } button,a,input,select,texta
 .property-list-section {padding-top:65px;}
 .property-hero {padding-top:50px;}
 .property-hero img {width:100%;height:280px;object-fit:cover;border-radius:4px;margin-top:30px;}
+.property-photo-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.property-photo-grid img {width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;}
 .property-info {display:grid;grid-template-columns:2fr 1fr;gap:50px;}
 .property-info dl,.room-facts {margin:0;}
 .property-info dl>div,.room-facts>div {padding:14px 0;border-bottom:1px solid var(--border);}
@@ -83,5 +85,5 @@ h1,h2,h3,p { margin:0; } a { text-decoration:none; } button,a,input,select,texta
 .room-rate {border-top:1px solid var(--border);padding-top:18px;}
 .room-rate>p:last-child {font-size:12px;color:var(--muted-foreground);line-height:1.8;margin-top:8px;}
 .room-modal .editorial-note {margin-top:0;}
-@media(max-width:1023px) {.rooms-grid {grid-template-columns:repeat(2,minmax(0,1fr));}.property-amenities {grid-template-columns:1fr 1fr;}}
-@media(max-width:639px) {.property-index-title {padding-top:45px;}.property-index-title h1,.property-hero h1 {font-size:44px;}.property-info,.property-amenities,.rooms-grid {grid-template-columns:1fr;}.property-info {gap:30px;}.property-hero img {height:190px;}.room-modal {top:0;left:0;transform:none;width:100%;height:100svh;max-height:100svh;border-radius:0;}.room-modal-copy {padding:20px;}.room-modal-title {font-size:30px;}.room-modal .property-amenities {grid-template-columns:1fr;}.room-facts {grid-template-columns:1fr;}.room-actions {flex-direction:column;}.property-shell .menu-panel {top:85px;}}
+@media(max-width:1023px) {.rooms-grid {grid-template-columns:repeat(2,minmax(0,1fr));}.property-photo-grid {grid-template-columns:repeat(3,minmax(0,1fr));}.property-amenities {grid-template-columns:1fr 1fr;}}
+@media(max-width:639px) {.property-index-title {padding-top:45px;}.property-index-title h1,.property-hero h1 {font-size:44px;}.property-info,.property-amenities,.rooms-grid {grid-template-columns:1fr;}.property-photo-grid {grid-template-columns:repeat(2,minmax(0,1fr));}.property-info {gap:30px;}.property-hero img {height:190px;}.room-modal {top:0;left:0;transform:none;width:100%;height:100svh;max-height:100svh;border-radius:0;}.room-modal-copy {padding:20px;}.room-modal-title {font-size:30px;}.room-modal .property-amenities {grid-template-columns:1fr;}.room-facts {grid-template-columns:1fr;}.room-actions {flex-direction:column;}.property-shell .menu-panel {top:85px;}}

@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest';
+import { existsSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { properties, getProperty, POR_CONFIRMAR, WHATSAPP_NUMBER } from '@/data/properties';
 import { buildWhatsAppUrl, roomWhatsAppMessage } from '@/lib/whatsapp';
 const hostal = properties[0];
@@ -8,6 +10,15 @@ describe('Documented property rules', () => {
   it('has 9 Hostal Viajeros rooms', () => expect(hostal?.rooms).toHaveLength(9));
   it('has 5 Casa Junto Al Rio rooms', () => expect(casa?.rooms).toHaveLength(5));
   it('has 3 Catarata Capua cabins', () => expect(capua?.rooms).toHaveLength(3));
+  it('uses local, existing photos for property galleries, heroes, and rooms', () => {
+    for (const property of properties) {
+      expect(property.gallery).toHaveLength(19);
+      for (const image of [property.heroImage, ...property.gallery, ...property.rooms.flatMap(room => room.images)]) {
+        expect(image).toMatch(/^\/images\/propiedades\//);
+        expect(existsSync(resolve(process.cwd(), 'public', image.slice(1)))).toBe(true);
+      }
+    }
+  });
   it('keeps hostal documented type distribution', () => expect(hostal?.rooms.map(r=>r.name)).toEqual(['Double or Twin Room','Double or Twin Room','Double Room','Double Room','Family Room with Private Bathroom','Family Room with Private Bathroom','Small Twin Room','Female Dormitory Room','Bed in 8-Bed Dormitory Room']));
   it('keeps hostal prices', () => expect(hostal?.rooms.map(r=>r.price)).toEqual([48,48,62,62,66,66,65,21,24]));
   it('keeps family capacity at documented two guests', () => expect(hostal?.rooms.filter(r=>r.name==='Family Room with Private Bathroom').map(r=>r.capacity)).toEqual([2,2]));
