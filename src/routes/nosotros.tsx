@@ -1,7 +1,56 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowUpRight } from 'lucide-react';
+import { useTranslation, Trans } from 'react-i18next';
+import i18n from '@/i18n';
 import { Site, Hero, Values } from '@/components/travel/site';
 import { images, pageHead } from '@/lib/travel-data';
 import { Button } from '@/components/ui/button';
-export const Route=createFileRoute('/nosotros')({head:()=>pageHead('Nuestra esencia local','Conoce Viajeros Arequipa: hospitalidad cercana, identidad arequipeña y experiencias genuinas en la Ciudad Blanca.'),component:About});
-function About(){return <Site><Hero title="De aquí. Para ti." eyebrow="Nuestra esencia" description="Creemos que los mejores viajes empiezan con un encuentro auténtico." image={images.catalina}/><section className="section page-width"><div className="detail-layout"><div className="detail-copy"><div className="eyebrow text-primary">Viajeros Arequipa</div><h2>Compartimos una ciudad.<br/><em>Conectamos historias.</em></h2><p>Somos viajeros locales apasionados por Arequipa. Nuestro objetivo es ofrecer hospedaje auténtico y experiencias hechas por gente de aquí.</p><p>A diferencia de las grandes cadenas, valoramos la atención personalizada, las conversaciones sin prisa y las experiencias genuinas. Nos inspira la arquitectura de sillar, la tradición de las picanterías y la vida de nuestros barrios.</p><p>Queremos una forma de viajar más consciente: conocer a la comunidad, respetar el entorno y llevarte algo más que una fotografía.</p><Button asChild variant="outline" size="lg" className="mt-8"><Link to="/contacto">Conversemos sobre tu viaje <ArrowUpRight/></Link></Button></div><img className="about-image" src={images.catalina} alt="Arquitectura y colores de Santa Catalina, Arequipa" loading="lazy" width="1280" height="1024"/></div></section><div className="section-divider"><Values/></div></Site>}
+
+export const Route = createFileRoute('/nosotros')({
+  head: () => pageHead(i18n.t('meta.aboutTitle'), i18n.t('meta.aboutDescription')),
+  component: About,
+});
+
+function About() {
+  const { t } = useTranslation();
+
+  return (
+    <Site>
+      <Hero
+        title={t('about.heroTitle')}
+        eyebrow={t('about.heroEyebrow')}
+        description={t('about.heroDescription')}
+        image={images.catalina}
+      />
+      <section className="section page-width">
+        <div className="detail-layout">
+          <div className="detail-copy">
+            <div className="eyebrow text-primary">{t('about.eyebrow')}</div>
+            <h2>
+              <Trans i18nKey="about.title" components={{ br: <br />, em: <em /> }} />
+            </h2>
+            <p>{t('about.p1')}</p>
+            <p>{t('about.p2')}</p>
+            <p>{t('about.p3')}</p>
+            <Button asChild variant="outline" size="lg" className="mt-8">
+              <Link to="/contacto">
+                {t('about.cta')} <ArrowUpRight />
+              </Link>
+            </Button>
+          </div>
+          <img
+            className="about-image"
+            src={images.catalina}
+            alt={t('about.imageAlt')}
+            loading="lazy"
+            width="1280"
+            height="1024"
+          />
+        </div>
+      </section>
+      <div className="section-divider">
+        <Values />
+      </div>
+    </Site>
+  );
+}

@@ -1,6 +1,19 @@
 import type { Property, Room } from '@/data/properties';
-export const buildWhatsAppUrl = (number: string, message: string) => `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
-export const roomWhatsAppMessage = (property: Property, room: Room) =>
-  `Hola, quiero reservar la habitación *${room.name}* en *${property.name}*.\n` +
-  'Fechas: [indicar fechas].\nHuéspedes: [indicar número].\n' +
-  (room.price !== undefined ? `Precio publicado: PEN ${room.price}.\n` : 'Precio: a consultar.\n') + '¿Está disponible?';
+import i18n from '@/i18n';
+import { formatNumber } from '@/lib/utils';
+
+export const buildWhatsAppUrl = (number: string, message: string) =>
+  `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+
+export const roomWhatsAppMessage = (property: Property, room: Room) => {
+  const priceText =
+    room.price !== undefined
+      ? i18n.t('whatsapp.publishedPrice', { price: formatNumber(room.price) })
+      : i18n.t('whatsapp.priceOnConsult');
+
+  return i18n.t('whatsapp.roomMessage', {
+    roomName: room.name,
+    propertyName: property.name,
+    priceText,
+  });
+};

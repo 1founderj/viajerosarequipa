@@ -1,54 +1,218 @@
+import i18n from '@/i18n';
 import { propertyPhoto } from '@/lib/property-images';
+import { formatNumber } from '@/lib/utils';
+
 export const POR_CONFIRMAR = 'Por confirmar';
 // Placeholder: reemplazar por el número confirmado del dueño antes de recibir reservas.
 export const WHATSAPP_NUMBER = '51999999999';
+
 export type Room = {
-  id: string; name: string; description: string; beds: string; size?: string; capacity: number;
-  price?: number; priceCurrency: 'PEN'; priceNote?: string; amenities: string[]; images: string[]; isProposal?: boolean;
-  bathroom: string; views: string;
+  id: string;
+  name: string;
+  description: string;
+  beds: string;
+  size?: string;
+  capacity: number;
+  price?: number;
+  priceCurrency: 'PEN';
+  priceNote?: string;
+  amenities: string[];
+  images: string[];
+  isProposal?: boolean;
+  bathroom: string;
+  views: string;
 };
+
 export type Property = {
-  id: string; slug: string; name: string; zone: string; category: string; address: string;
-  checkIn: string; checkOut: string; rating?: number; reviewsCount?: number; languages: string[];
-  description: string; highlights: string[]; amenities: string[]; nearby: { name: string; distance: string }[];
-  rooms: Room[]; whatsappNumber: string; heroImage: string; gallery: string[]; manager: string;
+  id: string;
+  slug: string;
+  name: string;
+  zone: string;
+  category: string;
+  address: string;
+  checkIn: string;
+  checkOut: string;
+  rating?: number;
+  reviewsCount?: number;
+  languages: string[];
+  description: string;
+  highlights: string[];
+  amenities: string[];
+  nearby: { name: string; distance: string }[];
+  rooms: Room[];
+  whatsappNumber: string;
+  heroImage: string;
+  gallery: string[];
+  manager: string;
 };
+
 const photoSeries = (folder: string, prefix: string, count: number) =>
-  Array.from({length:count}, (_, index) => propertyPhoto(folder, `${prefix}${index + 1}.jpg`));
+  Array.from({ length: count }, (_, index) => propertyPhoto(folder, `${prefix}${index + 1}.jpg`));
+
 const hostalPhotos = photoSeries('hostalviajerosarequipa', 'viajerosarequipa', 20);
-const rioPhotos = Array.from({length:20}, (_, index) => propertyPhoto('cajajuntoalrio', `CasaJuntoAlRio${index + 1}.${index === 12 ? 'png' : 'jpg'}`));
+const rioPhotos = Array.from({ length: 20 }, (_, index) =>
+  propertyPhoto('cajajuntoalrio', `CasaJuntoAlRio${index + 1}.${index === 12 ? 'png' : 'jpg'}`)
+);
 const capuaPhotos = photoSeries('cataratacapua', 'capua', 20);
-const views = 'Jardín, montaña, lugar de interés, río y patio interior';
-const kitchenAmenities = ['Cocina privada', 'Balcón', `Vistas: ${views}`, 'Patio', 'Lavavajillas', 'Terraza', 'WiFi gratis'];
-type RoomInput = Omit<Room, 'id' | 'images' | 'priceCurrency' | 'isProposal'>;
-const room = (id: string, input: RoomInput, images: string[]): Room => ({
-  ...input, id, images, priceCurrency: 'PEN',
-  // PROPUESTA: validar con el cliente
+
+const createRoom = (
+  propertySlug: string,
+  id: string,
+  capacity: number,
+  images: string[],
+  price?: number
+): Room => ({
+  id,
+  get name() {
+    return i18n.t(`properties.${propertySlug}.rooms.${id}.name`);
+  },
+  get description() {
+    return i18n.t(`properties.${propertySlug}.rooms.${id}.description`);
+  },
+  get beds() {
+    return i18n.t(`properties.${propertySlug}.rooms.${id}.beds`);
+  },
+  get size() {
+    const s = i18n.t(`properties.${propertySlug}.rooms.${id}.size`);
+    return s === 'toConfirm' || s === POR_CONFIRMAR ? POR_CONFIRMAR : s;
+  },
+  capacity,
+  ...(price === undefined ? {} : { price }),
+  priceCurrency: 'PEN',
+  get priceNote() {
+    const pn = i18n.t(`properties.${propertySlug}.rooms.${id}.priceNote`);
+    return pn === 'toConfirm' || pn === POR_CONFIRMAR ? POR_CONFIRMAR : pn;
+  },
+  get amenities() {
+    return i18n.t(`properties.${propertySlug}.rooms.${id}.amenities`, { returnObjects: true }) as string[];
+  },
+  images,
   isProposal: true,
+  get bathroom() {
+    return i18n.t(`properties.${propertySlug}.rooms.${id}.bathroom`);
+  },
+  get views() {
+    return i18n.t(`properties.${propertySlug}.rooms.${id}.views`);
+  },
 });
-const doubleTwin: RoomInput = {name:'Double or Twin Room',description:'Habitación de 20 m² con una cama full para hasta dos personas. Dispone de cocina privada, balcón, patio y terraza. Las vistas documentadas incluyen jardín, montaña, ciudad, río y patio interior.',beds:'1 cama full',size:'20 m²',capacity:2,price:48,priceNote:'2 personas: PEN 48 · 1 persona: PEN 31. Desayuno continental: PEN 10. Sin prepago; pago en el alojamiento.',amenities:[...kitchenAmenities,'Vista a la ciudad'],bathroom:POR_CONFIRMAR,views:`${views}, ciudad`};
-const double: RoomInput = {name:'Double Room',description:'Habitación de 25 m² con una cama full y baño privado. Cuenta con kitchenette privada, TV de pantalla plana, balcón, patio y terraza. Ofrece las vistas documentadas al jardín, montaña, río y patio interior.',beds:'1 cama full',size:'25 m²',capacity:2,price:62,priceNote:'2 personas: PEN 62 · 1 persona: PEN 48. Condiciones de desayuno y cancelación: por confirmar.',amenities:['Kitchenette privada','Baño privado',...kitchenAmenities.slice(1),'TV pantalla plana'],bathroom:'Privado',views};
-const family: RoomInput = {name:'Family Room with Private Bathroom',description:'Habitación de 30 m² con una cama twin, una litera y un sofá cama. La capacidad documentada es de hasta dos personas. Incluye cocina privada, baño privado y WiFi gratis.',beds:'1 cama twin + 1 litera + 1 sofá cama',size:'30 m²',capacity:2,price:66,priceNote:'2 personas: PEN 66 · 1 persona: PEN 41. Desayuno y cancelación: por confirmar.',amenities:['Cocina privada','Baño privado','WiFi gratis'],bathroom:'Privado',views:POR_CONFIRMAR};
-const small: RoomInput = {name:'Small Twin Room',description:'Habitación con una cama twin y una cama full para hasta dos personas. Dispone de baño privado y WiFi gratis. El tamaño y las vistas están por confirmar.',beds:'1 cama twin + 1 cama full',size:POR_CONFIRMAR,capacity:2,price:65,priceNote:'2 personas: PEN 65 · 1 persona: PEN 57. Desayuno y cancelación: por confirmar.',amenities:['Baño privado','WiFi gratis'],bathroom:'Privado',views:POR_CONFIRMAR};
-const female: RoomInput = {name:'Female Dormitory Room',description:'Dormitorio femenino de 45 m² con tres camas twin. La tarifa documentada corresponde a una persona. Ofrece WiFi gratis; el tipo de baño y las vistas están por confirmar.',beds:'3 camas twin',size:'45 m²',capacity:1,price:21,priceNote:'1 persona: PEN 21. Desayuno y cancelación: por confirmar.',amenities:['WiFi gratis'],bathroom:POR_CONFIRMAR,views:POR_CONFIRMAR};
-const dorm: RoomInput = {name:'Bed in 8-Bed Dormitory Room',description:'Una plaza con litera en un dormitorio de ocho camas de 45 m². La tarifa corresponde a una persona. El tipo documentado incluye cocina privada, balcón, patio, terraza y WiFi gratis.',beds:'1 litera',size:'45 m²',capacity:1,price:24,priceNote:'1 persona: PEN 24. Desayuno y cancelación: por confirmar.',amenities:kitchenAmenities,bathroom:POR_CONFIRMAR,views};
-const hostalRoom = (id: string, input: RoomInput, photos: number[]) =>
-  room(id, input, photos.map(index => hostalPhotos[index - 1]!));
-const casaRoom = (id: string, name: string, beds: string, capacity: number, amenities: string[], photos: number[], view = POR_CONFIRMAR) =>
-  room(id, {name,beds,capacity,amenities,size:POR_CONFIRMAR,bathroom:'Privado',views:view,description:`Propuesta de habitación con ${beds}, para hasta ${capacity} personas. La ficha propuesta incluye ${amenities.join(', ').toLowerCase()}. Configuración, capacidad y servicios de esta habitación pendientes de validación.`,priceNote:POR_CONFIRMAR}, photos.map(index => rioPhotos[index - 1]!));
-const bungalow = (n: number) => room(`cabana-${n}`, {name:`Cabaña ${n}`,description:'Bungalow completo con una cama twin y una cama full, para hasta dos personas. Ofrece vistas a la montaña, baño privado y barbacoa. El desayuno americano está incluido y no se requiere tarjeta de crédito.',beds:'1 cama twin + 1 cama full',size:POR_CONFIRMAR,capacity:2,price:58,priceNote:'2 personas: PEN 58 no reembolsable / PEN 65 flexible. 1 persona: PEN 52 no reembolsable / PEN 57 flexible. Desayuno americano incluido. Sin tarjeta de crédito.',amenities:['Bungalow completo','Vista a la montaña','Baño privado','Barbacoa','Desayuno americano incluido'],bathroom:'Privado',views:'Montaña'}, [capuaPhotos[11]!, capuaPhotos[17]!]);
+
+const createProperty = (
+  id: string,
+  slug: string,
+  rating: number | undefined,
+  reviewsCount: number | undefined,
+  heroImage: string,
+  gallery: string[],
+  rooms: Room[]
+): Property => ({
+  id,
+  slug,
+  get name() {
+    return i18n.t(`properties.${slug}.name`);
+  },
+  get zone() {
+    return i18n.t(`properties.${slug}.zone`);
+  },
+  get category() {
+    return i18n.t(`properties.${slug}.category`);
+  },
+  get address() {
+    return i18n.t(`properties.${slug}.address`);
+  },
+  get checkIn() {
+    return i18n.t(`properties.${slug}.checkIn`);
+  },
+  get checkOut() {
+    return i18n.t(`properties.${slug}.checkOut`);
+  },
+  ...(rating === undefined ? {} : { rating }),
+  ...(reviewsCount === undefined ? {} : { reviewsCount }),
+  get languages() {
+    return i18n.t(`properties.${slug}.languages`, { returnObjects: true }) as string[];
+  },
+  get manager() {
+    const m = i18n.t(`properties.${slug}.manager`);
+    return m === 'toConfirm' || m === POR_CONFIRMAR ? POR_CONFIRMAR : m;
+  },
+  get description() {
+    return i18n.t(`properties.${slug}.description`);
+  },
+  get highlights() {
+    return i18n.t(`properties.${slug}.highlights`, { returnObjects: true }) as string[];
+  },
+  get amenities() {
+    return i18n.t(`properties.${slug}.amenities`, { returnObjects: true }) as string[];
+  },
+  get nearby() {
+    return i18n.t(`properties.${slug}.nearby`, { returnObjects: true }) as { name: string; distance: string }[];
+  },
+  rooms,
+  whatsappNumber: WHATSAPP_NUMBER,
+  heroImage,
+  gallery,
+});
+
 export const properties: Property[] = [
-  {id:'viajeros',slug:'hostal-viajeros-arequipa',name:'Hostal Viajeros Arequipa',zone:'Centro Histórico',category:'Hostal',address:'Callejón del Solar 101B, 04000 Arequipa, Perú',checkIn:'12:00–22:00',checkOut:'06:00–11:00',rating:7.8,reviewsCount:588,languages:['Inglés','Español (probable, por confirmar)'],manager:'Miller',description:'Una estancia en el Centro Histórico, a 350 m de la Plaza de Armas. Cocina compartida, terraza, jardín y WiFi gratis para acompañar tus días en Arequipa.',highlights:['Ubicación: 9.4 / 10','WiFi: 9.5 / 10 · 39 Mbps','Desayuno continental · PEN 10 según tarifa'],amenities:['WiFi gratis · 39 Mbps','Parking en el sitio · US$3/día, reserva necesaria','Mascotas bajo petición','Habitaciones no fumadores','Habitaciones familiares','Baño privado','Balcón','Vistas','Desayuno muy bueno','Cocina compartida','Terraza','Jardín','Mobiliario exterior','Mostrador de tours','Consigna de equipaje','Bicicletas gratis','Check-in/out exprés','Lavandería (cargo extra)','Walking tours','Hiking (cargo extra)','Alquiler de bicicletas','Seguridad 24 h','Caja fuerte','Extintores'],nearby:[{name:'Plaza de Armas',distance:'350 m'},{name:'Casa Ricketts',distance:'450 m'},{name:'Parque Grau',distance:'600 m'},{name:'Palacio Goyeneche',distance:'650 m'},{name:'Museo Histórico',distance:'700 m'},{name:'Museo Arqueológico',distance:'800 m'},{name:'Aeropuerto Rodríguez Ballón',distance:'6 km'}],
-  // PROPUESTA: validar con el cliente — distribución de los seis tipos en nueve habitaciones.
-  rooms:[hostalRoom('double-twin-1',doubleTwin,[13,15]),hostalRoom('double-twin-2',doubleTwin,[15,13]),hostalRoom('double-1',double,[13,15]),hostalRoom('double-2',double,[15,13]),hostalRoom('family-1',family,[2,14]),hostalRoom('family-2',family,[17,11]),hostalRoom('small-twin',small,[15,13]),hostalRoom('female-dorm',female,[2,17]),hostalRoom('bed-dorm',dorm,[17,2])],whatsappNumber:WHATSAPP_NUMBER,heroImage:hostalPhotos[18]!,gallery:hostalPhotos.filter((_,index)=>index!==18)},
-  {id:'rio',slug:'casa-junto-al-rio',name:'Casa Junto Al Rio',zone:'Yanahuara',category:'Bed and Breakfast',address:'Av. Francisco Bolognesi 118-A, Yanahuara, Arequipa, Perú',checkIn:'13:00–21:00',checkOut:'08:00–11:00',languages:[POR_CONFIRMAR],manager:POR_CONFIRMAR,description:'Un Bed and Breakfast en Yanahuara, con jardín, terraza solárium y piscina. A seis minutos a pie del Mirador de Yanahuara.',highlights:['Piscina en azotea, de inmersión, cubierta y con vista','Agradable para niños','No se admiten animales'],amenities:['WiFi','Piscina · zona poco profunda','Karaoke','Entretenimiento en directo','Terraza solárium','Jardín','Sauna','Excursionismo','Bicicletas','Traslado (de pago)','Lavandería','Asistencia en excursiones y entradas','Centro de negocios','Reuniones y banquetes','Cocina compartida','Hervidor','Utensilios de cocina','Mesas de picnic','No fumar','Parking','Registro de entrada/salida privado','No se admiten animales','Seguridad 24 h','Cambio de divisas','Detectores de humo','Extintores','Terraza en habitación (general)','Servicio de té/café (general)','Mesa de comedor (general)','Plancha de pantalones (general)','TV LCD (general)','Juegos de tablero (general)','Zona de juegos para niños','Algunas habitaciones: TV satélite, cafetera/tetera, nevera y baño privado'],nearby:[{name:'Iglesia de Cayma',distance:'450 m'},{name:'Mirador de Yanahuara',distance:'6 min a pie'},{name:'Plaza San Francisco',distance:'1 km'},{name:'Plaza de Armas',distance:POR_CONFIRMAR},{name:'Convento de Santa Catalina',distance:'1.1 km'},{name:'Parada La Recoleta',distance:POR_CONFIRMAR}],
-  // PROPUESTA: validar con el cliente — tipos, camas, capacidades y recursos por habitación.
-  rooms:[casaRoom('doble-terraza','Habitación Doble con Terraza','1 cama full',2,['Baño privado','Terraza','TV LCD','Servicio de té/café','Nevera'],[16,18]),casaRoom('doble-jardin','Habitación Doble con Vista al Jardín','1 cama full',2,['Baño privado','Vistas al jardín','TV satélite','Cafetera/tetera'],[15,6],'Jardín'),casaRoom('twin','Habitación Twin','2 camas twin',2,['Baño privado','Servicio de té/café','Mesa de comedor'],[14,13]),casaRoom('familiar','Habitación Familiar','1 cama full + 1 sofá cama',4,['Baño privado','TV LCD','Juegos de tablero','Zona de juegos para niños'],[3,16]),casaRoom('superior','Habitación Superior con acceso a piscina','1 cama queen',2,['Baño privado','Terraza','Vistas a la piscina','Nevera','TV pantalla plana'],[3,4,10,11],'Piscina')],whatsappNumber:WHATSAPP_NUMBER,heroImage:rioPhotos[3]!,gallery:rioPhotos.filter((_,index)=>index!==3)},
-  {id:'capua',slug:'catarata-capua',name:'Catarata Capua',zone:'Yura',category:'Glamping',address:'Catarata Capua, Yura, Perú (dirección exacta tras reserva)',checkIn:'01:00–18:00',checkOut:'08:00–11:00',rating:7.5,reviewsCount:2,languages:['Inglés','Español','Francés'],manager:POR_CONFIRMAR,description:'Bungalows completos con vistas a la montaña en Yura. Jardín, terraza y desayuno americano incluido para una estancia junto a Catarata Capua.',highlights:['Personal: 8.8 / 10','Desayuno americano incluido','Sin internet · sin parking'],amenities:['Piscina','Habitaciones no fumadores','Habitaciones familiares','Desayuno americano','Jardín','Terraza','Mascotas gratis','Mesa de comedor','Utensilios de cocina','Hervidor','Vistas a la montaña','Zona de comedor exterior','Barbacoa','Baño privado','Ducha','No hay internet','No hay parking'],nearby:[{name:'Aeropuerto Rodríguez Ballón',distance:'23 km'},{name:'Restaurantes',distance:'~19 km'}],
-  // PROPUESTA: validar con el cliente — tres cabañas con la misma ficha documentada Bungalow.
-  rooms:[bungalow(1),bungalow(2),bungalow(3)],whatsappNumber:WHATSAPP_NUMBER,heroImage:capuaPhotos[11]!,gallery:capuaPhotos.filter((_,index)=>index!==11)},
+  createProperty(
+    'viajeros',
+    'hostal-viajeros-arequipa',
+    7.8,
+    588,
+    hostalPhotos[18]!,
+    hostalPhotos.filter((_, index) => index !== 18),
+    [
+      createRoom('hostal-viajeros-arequipa', 'double-twin-1', 2, [hostalPhotos[12]!, hostalPhotos[14]!], 48),
+      createRoom('hostal-viajeros-arequipa', 'double-twin-2', 2, [hostalPhotos[14]!, hostalPhotos[12]!], 48),
+      createRoom('hostal-viajeros-arequipa', 'double-1', 2, [hostalPhotos[12]!, hostalPhotos[14]!], 62),
+      createRoom('hostal-viajeros-arequipa', 'double-2', 2, [hostalPhotos[14]!, hostalPhotos[12]!], 62),
+      createRoom('hostal-viajeros-arequipa', 'family-1', 2, [hostalPhotos[1]!, hostalPhotos[13]!], 66),
+      createRoom('hostal-viajeros-arequipa', 'family-2', 2, [hostalPhotos[16]!, hostalPhotos[10]!], 66),
+      createRoom('hostal-viajeros-arequipa', 'small-twin', 2, [hostalPhotos[14]!, hostalPhotos[12]!], 65),
+      createRoom('hostal-viajeros-arequipa', 'female-dorm', 1, [hostalPhotos[1]!, hostalPhotos[16]!], 21),
+      createRoom('hostal-viajeros-arequipa', 'bed-dorm', 1, [hostalPhotos[16]!, hostalPhotos[1]!], 24),
+    ]
+  ),
+  createProperty(
+    'rio',
+    'casa-junto-al-rio',
+    undefined,
+    undefined,
+    rioPhotos[3]!,
+    rioPhotos.filter((_, index) => index !== 3),
+    [
+      createRoom('casa-junto-al-rio', 'doble-terraza', 2, [rioPhotos[15]!, rioPhotos[17]!]),
+      createRoom('casa-junto-al-rio', 'doble-jardin', 2, [rioPhotos[14]!, rioPhotos[5]!]),
+      createRoom('casa-junto-al-rio', 'twin', 2, [rioPhotos[13]!, rioPhotos[12]!]),
+      createRoom('casa-junto-al-rio', 'familiar', 4, [rioPhotos[2]!, rioPhotos[15]!]),
+      createRoom('casa-junto-al-rio', 'superior', 2, [rioPhotos[2]!, rioPhotos[3]!, rioPhotos[9]!, rioPhotos[10]!]),
+    ]
+  ),
+  createProperty(
+    'capua',
+    'catarata-capua',
+    7.5,
+    2,
+    capuaPhotos[11]!,
+    capuaPhotos.filter((_, index) => index !== 11),
+    [
+      createRoom('catarata-capua', 'cabana-1', 2, [capuaPhotos[11]!, capuaPhotos[17]!], 58),
+      createRoom('catarata-capua', 'cabana-2', 2, [capuaPhotos[11]!, capuaPhotos[17]!], 58),
+      createRoom('catarata-capua', 'cabana-3', 2, [capuaPhotos[11]!, capuaPhotos[17]!], 58),
+    ]
+  ),
 ];
+
 // Preserve previous public URLs without keeping obsolete sample properties.
-export const legacyPropertySlugs: Record<string, string> = {'hostal-sillar':'hostal-viajeros-arequipa','hostal-miraflores':'casa-junto-al-rio','casa-del-valle':'catarata-capua'};
-export const getProperty = (slug: string) => properties.find(p => p.slug === (legacyPropertySlugs[slug] ?? slug));
-export const roomPrice = (room: Room) => room.price === undefined ? 'Precio a consultar' : `PEN ${room.price}`;
+export const legacyPropertySlugs: Record<string, string> = {
+  'hostal-sillar': 'hostal-viajeros-arequipa',
+  'hostal-miraflores': 'casa-junto-al-rio',
+  'casa-del-valle': 'catarata-capua',
+};
+
+export const getProperty = (slug: string) =>
+  properties.find((p) => p.slug === (legacyPropertySlugs[slug] ?? slug));
+
+export const roomPrice = (room: Room) =>
+  room.price === undefined
+    ? i18n.t('common.priceOnConsult')
+    : i18n.t('common.pricePEN', { price: formatNumber(room.price) });

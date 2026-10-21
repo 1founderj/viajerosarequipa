@@ -1,0 +1,632 @@
+{
+  "meta": {
+    "defaultTitle": "Viajeros Arequipa",
+    "defaultDescription": "Auberges et expériences locales dans la Ville Blanche.",
+    "htmlTitle": "Viajeros Arequipa",
+    "htmlDescription": "Auberges et expériences locales dans la Ville Blanche.",
+    "homeTitle": "Auberges et tours dans la Ville Blanche",
+    "homeDescription": "Séjournez chez Viajeros Arequipa et découvrez la Ville Blanche. Hébergements, tours du Colca et expériences à l’esprit local.",
+    "aboutTitle": "Notre esprit local",
+    "aboutDescription": "Découvrez Viajeros Arequipa : une hospitalité chaleureuse, l’identité d’Arequipa et des expériences authentiques dans la Ville Blanche.",
+    "contactTitle": "Contact et demandes de réservation",
+    "contactDescription": "Préparez votre séjour ou votre tour à Arequipa. Préparez une demande personnalisée avec vos dates et le nombre de voyageurs auprès de Viajeros Arequipa.",
+    "propertiesTitle": "Hébergements à Arequipa",
+    "propertiesDescription": "Hostal Viajeros Arequipa, Casa Junto Al Rio et Catarata Capua : chambres et cabanes dans le centre historique, à Yanahuara et à Yura.",
+    "propertyFallbackTitle": "Hébergement indisponible",
+    "propertyFallbackDescription": "Découvrez nos hébergements à Arequipa.",
+    "toursTitle": "Tours et expériences à Arequipa",
+    "toursDescription": "Explorez les tours du Colca, Santa Catalina, le volcan Misti et la gastronomie d’Arequipa. Trouvez votre aventure à l’esprit local.",
+    "tourFallbackTitle": "Expérience",
+    "tourFallbackDescription": "Tours et expériences locales à Arequipa."
+  },
+  "root": {
+    "notFoundCode": "404",
+    "notFoundTitle": "Page introuvable",
+    "notFoundDesc": "La page que vous cherchez n’existe pas ou a été déplacée.",
+    "goHome": "Retour à l’accueil",
+    "errorTitle": "Cette page n’a pas pu se charger",
+    "errorDesc": "Un problème est survenu de notre côté. Vous pouvez actualiser la page ou retourner à l’accueil.",
+    "tryAgain": "Réessayer"
+  },
+  "common": {
+    "toConfirm": "À confirmer",
+    "priceOnConsult": "Prix sur demande",
+    "rateOnConsult": "Tarif sur demande",
+    "fromPrice": "À partir de {{price}}",
+    "pricePEN": "{{price}} PEN",
+    "goHome": "Retour à l’accueil",
+    "tryAgain": "Réessayer",
+    "back": "Retour",
+    "close": "Fermer",
+    "viewDetail": "Voir le détail",
+    "viewProperty": "Voir l’hébergement"
+  },
+  "nav": {
+    "brandName": "Viajeros Arequipa",
+    "brandCaption": "Des histoires à vivre",
+    "logoAlt": "Visites à pied gratuites à Arequipa",
+    "logoFooterAlt": "Logo d’Arequipa",
+    "home": "Accueil",
+    "properties": "Hébergements",
+    "tours": "Tours et expériences",
+    "about": "Qui sommes-nous",
+    "contact": "Contact",
+    "bookNow": "Réserver maintenant",
+    "ariaMainNav": "Navigation principale",
+    "ariaMobileNav": "Navigation mobile",
+    "ariaOpenMenu": "Ouvrir le menu",
+    "ariaCloseMenu": "Fermer le menu",
+    "ariaSelectLanguage": "Choisir la langue"
+  },
+  "footer": {
+    "description": "Séjournez, explorez et vivez l’esprit de la Ville Blanche. Arequipa, aux côtés de ses habitants.",
+    "colTripsTitle": "Votre prochain voyage",
+    "colTripsProperties": "Nos hébergements",
+    "colTripsTours": "Tours et expériences",
+    "colTripsBooking": "Faire une demande de réservation",
+    "colArequipaTitle": "Depuis Arequipa",
+    "colArequipaAbout": "Notre esprit",
+    "colArequipaContact": "Contact et questions",
+    "cityCountry": "Arequipa, Pérou",
+    "copyright": "© 2026 Viajeros Arequipa. Fait avec l’esprit local.",
+    "tagline": "La Ville Blanche vous attend."
+  },
+  "values": {
+    "hospitalityTitle": "Une vraie hospitalité",
+    "hospitalityText": "Un accueil chaleureux et une expérience à l’identité locale.",
+    "localTitle": "Arequipa, avec un regard local",
+    "localText": "Les histoires, les saveurs et les recoins qui rendent notre ville si spéciale.",
+    "travelTitle": "Voyagez à votre façon",
+    "travelText": "Ville, nature ou aventure. Votre voyage commence par ce qui vous inspire."
+  },
+  "cards": {
+    "propertyAlt": "Image d’illustration de {{name}}",
+    "rateOnConsult": "Tarif sur demande",
+    "knowLodging": "Découvrir l’hébergement",
+    "knowItinerary": "Découvrir l’itinéraire",
+    "exploreExperience": "Explorer l’expérience"
+  },
+  "bookingBar": {
+    "propertyLabel": "Votre hébergement",
+    "propertyPlaceholder": "Choisissez votre lieu idéal",
+    "arrivalLabel": "Arrivée",
+    "arrivalAria": "Date d’arrivée",
+    "departureLabel": "Départ",
+    "departureAria": "Date de départ",
+    "guestsLabel": "Voyageurs",
+    "traveler_one": "{{count}} voyageur",
+    "traveler_other": "{{count}} voyageurs",
+    "submit": "Vérifier la disponibilité"
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "La cathédrale d’Arequipa et le volcan Misti sous un ciel bleu",
+      "eyebrow": "Arequipa, Pérou · Vivez l’authentique",
+      "brandTitle": "VIAJEROS AREQUIPA",
+      "title": "La Ville Blanche.<br/><em>Votre prochaine histoire.</em>",
+      "intro": "Ne vous contentez pas de visiter Arequipa. Ressentez-la.<br/>Des hébergements pleins d’âme, des aventures inoubliables<br/>et des habitants qui vous font sentir chez vous.",
+      "ctaLodgings": "Trouvez votre hébergement",
+      "ctaTours": "Explorez les tours",
+      "location": "Plaza de Armas · Arequipa",
+      "scroll": "Il y a tant à découvrir"
+    },
+    "lodgings": {
+      "eyebrow": "Restez un peu plus longtemps",
+      "title": "Trois lieux. Mille histoires.",
+      "viewAll": "Voir tous les hébergements"
+    },
+    "tours": {
+      "eyebrow": "Au-delà de la carte postale",
+      "title": "Partez vivre Arequipa.",
+      "intro": "Des rues qui racontent des siècles d’histoire aux paysages qui vous laissent sans voix. Choisissez votre prochaine aventure.",
+      "viewAll": "Toutes les expériences"
+    },
+    "band": {
+      "imageAlt": "Patios colorés du monastère de Santa Catalina",
+      "eyebrow": "Nous ne sommes pas une chaîne. Nous sommes d’ici.",
+      "title": "Une ville pleine d’âme.<br/><em>Des gens qui la partagent.</em>",
+      "intro": "Notre terre, ses histoires et la joie de vous accueillir nous animent. Découvrez une Arequipa proche, authentique et bien à nous.",
+      "cta": "Découvrez notre histoire"
+    }
+  },
+  "about": {
+    "heroTitle": "D’ici. Pour vous.",
+    "heroEyebrow": "Notre esprit",
+    "heroDescription": "Nous croyons que les plus beaux voyages commencent par une vraie rencontre.",
+    "eyebrow": "Viajeros Arequipa",
+    "title": "Nous partageons une ville.<br/><em>Nous relions des histoires.</em>",
+    "p1": "Nous sommes des voyageurs locaux passionnés par Arequipa. Notre objectif : proposer un hébergement authentique et des expériences imaginées par des gens d’ici.",
+    "p2": "Contrairement aux grandes chaînes, nous privilégions l’attention personnalisée, les conversations sans se presser et les expériences sincères. Nous sommes inspirés par l’architecture en sillar, la tradition des picanterías et la vie de nos quartiers.",
+    "p3": "Nous voulons une façon de voyager plus consciente : rencontrer la communauté, respecter l’environnement et repartir avec plus qu’une photographie.",
+    "cta": "Parlons de votre voyage",
+    "imageAlt": "Architecture et couleurs de Santa Catalina, Arequipa"
+  },
+  "contact": {
+    "heroTitle": "Votre histoire commence ici.",
+    "heroEyebrow": "Contact et réservations",
+    "heroDescription": "Une escapade, une aventure ou quelques jours pour décrocher. Dites-nous quel voyage vous avez en tête.",
+    "eyebrow": "Préparez votre voyage",
+    "title": "Parlons d’Arequipa.",
+    "notice": "Nous préparons notre canal de réservation. Pour l’instant, vous pouvez remplir et télécharger votre demande ; aucune réservation n’est envoyée ni confirmée et aucun paiement n’est effectué.",
+    "step1": "01 · Votre voyage",
+    "step2": "02 · Vos coordonnées",
+    "interestLabel": "Que souhaitez-vous réserver ?",
+    "interestPlaceholder": "Sélectionnez une option",
+    "interestGeneral": "Demande générale",
+    "arrivalLabel": "Arrivée ou date de l’expérience",
+    "departureLabel": "Départ (hébergement uniquement)",
+    "guestsLabel": "Nombre de voyageurs",
+    "nameLabel": "Nom complet",
+    "emailLabel": "Adresse e-mail",
+    "messageLabel": "Dites-nous-en un peu plus",
+    "messagePlaceholder": "Préférences, questions ou petite attention pour votre voyage…",
+    "errorDeparture": "La date de départ doit être postérieure à la date d’arrivée.",
+    "buttonContinue": "Continuer",
+    "buttonPrepare": "Préparer la demande",
+    "buttonBack": "Retour",
+    "prepared": {
+      "title": "Votre demande est prête.",
+      "description": "Merci, {{name}}. Vérifiez votre voyage et enregistrez le brouillon. <bold>Elle n’a pas été envoyée.</bold>",
+      "interest": "Hébergement ou expérience",
+      "datesAndGuests": "Dates et voyageurs",
+      "traveler_one": "{{count}} voyageur",
+      "traveler_other": "{{count}} voyageurs",
+      "email": "E-mail de contact",
+      "download": "Télécharger la demande",
+      "edit": "Modifier les informations"
+    },
+    "downloadFile": {
+      "fileName": "demande-voyage-viajeros-arequipa.txt",
+      "header": "DEMANDE DE VOYAGE — VIAJEROS AREQUIPA",
+      "name": "Nom : {{name}}",
+      "email": "E-mail : {{email}}",
+      "interest": "Intérêt : {{interest}}",
+      "arrival": "Arrivée / date du tour : {{arrival}}",
+      "departure": "Départ : {{departure}}",
+      "notApplicable": "Sans objet",
+      "guests": "Voyageurs : {{guests}}",
+      "message": "Message : {{message}}",
+      "footer": "Brouillon non envoyé. Disponibilité, tarif et réservation non confirmés."
+    },
+    "aside": {
+      "eyebrow": "Depuis la Ville Blanche",
+      "title": "Retrouvez-nous à Arequipa.",
+      "location": "Arequipa, Pérou",
+      "status": "Téléphone, WhatsApp, e-mail et horaires d’accueil en attente de confirmation.",
+      "mapTitle": "Carte de référence du centre d’Arequipa, n’indique pas l’emplacement d’un hébergement",
+      "editorialNote": "Repère de la ville. Ne correspond pas à une adresse confirmée des hébergements."
+    },
+    "faq": {
+      "title": "Avant de faire vos valises.",
+      "q1": "Comment puis-je réserver ?",
+      "a1": "Sélectionnez un hébergement ou une expérience et préparez votre demande avec vos dates et le nombre de voyageurs. Le canal d’envoi n’est pas encore activé. La réservation ne sera valable qu’une fois la disponibilité et le tarif confirmés.",
+      "q2": "Quelle est la politique d’annulation ?",
+      "a2": "Les conditions d’annulation doivent être confirmées avec la proposition de réservation. Aucune politique n’a encore été publiée.",
+      "q3": "Dans quelles langues les tours sont-ils proposés ?",
+      "a3": "Renseignez-vous sur les langues disponibles pour votre expérience et votre date avant de confirmer votre réservation.",
+      "q4": "Puis-je payer depuis cette page ?",
+      "a4": "Non. Les paiements en ligne ne sont pas encore activés et ce formulaire n’effectue aucun prélèvement."
+    }
+  },
+  "toursIndex": {
+    "heroTitle": "Des expériences qui restent.",
+    "heroEyebrow": "Explorez. Connectez. Souvenez-vous.",
+    "heroDescription": "Arequipa a mille histoires à raconter. Choisissez comment vivre la vôtre.",
+    "filters": {
+      "all": "Toutes",
+      "culture": "Culture",
+      "nature": "Nature",
+      "adventure": "Aventure",
+      "gastronomy": "Gastronomie"
+    },
+    "editorialNote": "Itinéraires et images à titre indicatif. Renseignez-vous sur les tarifs, les guides, les langues, la formule et les services inclus avant de réserver."
+  },
+  "tourDetail": {
+    "eyebrow": "L’aventure vous attend",
+    "title": "Bien plus qu’un parcours.",
+    "beforeTitle": "Avant votre expérience",
+    "beforeDescription": "Renseignez-vous sur le point de rencontre, le transport, les entrées, les repas, les langues disponibles et la taille du groupe. Nous vous recommandons d’emporter de la crème solaire, de l’eau et des vêtements adaptés au climat.",
+    "editorialNote": "Proposition d’itinéraire et image à titre indicatif. Organisation et tarifs en attente de confirmation.",
+    "inquiryTitle": "Faisons une place à l’aventure.",
+    "inquiryDescription": "Choisissez votre date et demandez une proposition personnalisée. Prix et disponibilité à confirmer.",
+    "inquiryButton": "Demander ce tour"
+  },
+  "propertiesIndex": {
+    "eyebrow": "Centre historique · Yanahuara · Yura",
+    "title": "Votre lieu à Arequipa.",
+    "intro": "Trois hébergements, trois façons de vivre la ville et ses paysages.",
+    "sectionEyebrow": "Trouvez votre séjour",
+    "sectionTitle": "Trois lieux. Mille histoires.",
+    "editorialNote": "Photos d’illustration. Configuration des chambres en attente de validation ; tarifs et disponibilités sous réserve de confirmation.",
+    "photoAlt": "Photo d’illustration de {{name}}",
+    "cabinCount_one": "{{count}} cabane",
+    "cabinCount_other": "{{count}} cabanes",
+    "roomCount_one": "{{count}} chambre",
+    "roomCount_other": "{{count}} chambres",
+    "viewProperty": "Voir l’hébergement"
+  },
+  "propertyHero": {
+    "alt": "Vue de l’hébergement {{name}}"
+  },
+  "propertyInfo": {
+    "address": "Adresse",
+    "checkInOut": "Arrivée / départ",
+    "rating": "Note documentée",
+    "reviewCount_one": "{{rating}} / 10 · {{reviewsCount}} avis",
+    "reviewCount_other": "{{rating}} / 10 · {{reviewsCount}} avis",
+    "languages": "Langues",
+    "manager": "Responsable"
+  },
+  "propertyPage": {
+    "allProperties": "← Tous les hébergements",
+    "lodgingEyebrow": "L’hébergement",
+    "lodgingTitle": "Découvrez chaque recoin.",
+    "photoAlt": "Vue {{index}} de {{name}}",
+    "stayEyebrow": "Votre séjour",
+    "stayTitle": "Tout ce qu’il faut savoir.",
+    "servicesEyebrow": "Pendant votre voyage",
+    "servicesTitle": "Services de l’hébergement.",
+    "surroundingsEyebrow": "Explorez les environs",
+    "surroundingsTitle": "Tout près de vous."
+  },
+  "roomCard": {
+    "ariaLabel": "Voir {{name}} · {{id}}",
+    "imageAlt": "Photo d’illustration de {{name}} ({{propertyName}})",
+    "proposal": "Proposition",
+    "capacity_one": "Jusqu’à {{count}} personne",
+    "capacity_other": "Jusqu’à {{count}} personnes",
+    "viewDetail": "Voir le détail"
+  },
+  "roomModal": {
+    "closeAria": "Fermer la chambre",
+    "imageAlt": "Photo d’illustration de {{name}}",
+    "viewImageAria": "Voir l’image {{index}}",
+    "thumbAlt": "Miniature {{index}} de {{name}}",
+    "capacity_one": "Jusqu’à {{count}} personne",
+    "capacity_other": "Jusqu’à {{count}} personnes",
+    "factBeds": "Lits",
+    "factSize": "Superficie",
+    "factMaxCapacity": "Capacité maximale",
+    "factBathroom": "Salle de bain",
+    "factViews": "Vues",
+    "resources": "Équipements",
+    "editorialNote": "Photographies d’illustration. Tarifs documentés, sous réserve de confirmation pour vos dates. WhatsApp : numéro d’exemple à remplacer.",
+    "closeButton": "Fermer"
+  },
+  "roomsSection": {
+    "cabinCount_one": "{{count}} cabane · {{zone}}",
+    "cabinCount_other": "{{count}} cabanes · {{zone}}",
+    "roomCount_one": "{{count}} chambre · {{zone}}",
+    "roomCount_other": "{{count}} chambres · {{zone}}",
+    "title": "Choisissez votre espace.",
+    "editorialNote": "Répartition et fiches proposées en attente de validation. Photographies d’illustration ; disponibilités et tarifs à confirmer. Le numéro WhatsApp est encore un numéro d’exemple."
+  },
+  "whatsapp": {
+    "buttonText": "Réserver par WhatsApp",
+    "roomMessage": "Bonjour, je souhaite réserver la chambre *{{roomName}}* à *{{propertyName}}*.\nDates : [indiquer les dates].\nVoyageurs : [indiquer le nombre].\n{{priceText}}\nEst-elle disponible ?",
+    "publishedPrice": "Prix publié : {{price}} PEN.",
+    "priceOnConsult": "Prix : sur demande."
+  },
+  "properties": {
+    "hostal-viajeros-arequipa": {
+      "name": "Hostal Viajeros Arequipa",
+      "zone": "Centre historique",
+      "category": "Auberge",
+      "address": "Callejón del Solar 101B, 04000 Arequipa, Pérou",
+      "checkIn": "12:00–22:00",
+      "checkOut": "06:00–11:00",
+      "languages": ["Anglais", "Espagnol (probable, à confirmer)"],
+      "description": "Un séjour dans le centre historique, à 350 m de la Plaza de Armas. Cuisine partagée, terrasse, jardin et Wi-Fi gratuit pour accompagner vos journées à Arequipa.",
+      "manager": "Miller",
+      "location": "Centre historique, Arequipa",
+      "highlights": [
+        "Emplacement : 9,4 / 10",
+        "Wi-Fi : 9,5 / 10 · 39 Mbps",
+        "Petit-déjeuner continental · PEN 10 selon le tarif"
+      ],
+      "amenities": [
+        "Wi-Fi gratuit · 39 Mbps",
+        "Parking sur place · 3 $ US/jour, réservation nécessaire",
+        "Animaux acceptés sur demande",
+        "Chambres non-fumeurs",
+        "Chambres familiales",
+        "Salle de bain privée",
+        "Balcon",
+        "Vues",
+        "Très bon petit-déjeuner",
+        "Cuisine partagée",
+        "Terrasse",
+        "Jardin",
+        "Mobilier d’extérieur",
+        "Bureau d’excursions",
+        "Consigne à bagages",
+        "Vélos gratuits",
+        "Arrivée/départ express",
+        "Blanchisserie (supplément)",
+        "Visites à pied",
+        "Randonnée (supplément)",
+        "Location de vélos",
+        "Sécurité 24 h/24",
+        "Coffre-fort",
+        "Extincteurs"
+      ],
+      "nearby": [
+        { "name": "Plaza de Armas", "distance": "350 m" },
+        { "name": "Casa Ricketts", "distance": "450 m" },
+        { "name": "Parque Grau", "distance": "600 m" },
+        { "name": "Palacio Goyeneche", "distance": "650 m" },
+        { "name": "Musée historique", "distance": "700 m" },
+        { "name": "Musée archéologique", "distance": "800 m" },
+        { "name": "Aéroport Rodríguez Ballón", "distance": "6 km" }
+      ],
+      "rooms": {
+        "double-twin-1": {
+          "name": "Chambre double ou lits jumeaux",
+          "description": "Chambre de 20 m² avec un lit double pour deux personnes maximum. Elle dispose d’une cuisine privée, d’un balcon, d’un patio et d’une terrasse. Les vues documentées comprennent le jardin, la montagne, la ville, la rivière et la cour intérieure.",
+          "beds": "1 lit double",
+          "size": "20 m²",
+          "priceNote": "2 personnes : PEN 48 · 1 personne : PEN 31. Petit-déjeuner continental : PEN 10. Aucun prépaiement ; paiement sur place.",
+          "amenities": ["Cuisine privée", "Balcon", "Vues : jardin, montagne, site d’intérêt, rivière et cour intérieure", "Patio", "Lave-vaisselle", "Terrasse", "Wi-Fi gratuit", "Vue sur la ville"],
+          "bathroom": "À confirmer",
+          "views": "Jardin, montagne, site d’intérêt, rivière et cour intérieure, ville"
+        },
+        "double-twin-2": {
+          "name": "Chambre double ou lits jumeaux",
+          "description": "Chambre de 20 m² avec un lit double pour deux personnes maximum. Elle dispose d’une cuisine privée, d’un balcon, d’un patio et d’une terrasse. Les vues documentées comprennent le jardin, la montagne, la ville, la rivière et la cour intérieure.",
+          "beds": "1 lit double",
+          "size": "20 m²",
+          "priceNote": "2 personnes : PEN 48 · 1 personne : PEN 31. Petit-déjeuner continental : PEN 10. Aucun prépaiement ; paiement sur place.",
+          "amenities": ["Cuisine privée", "Balcon", "Vues : jardin, montagne, site d’intérêt, rivière et cour intérieure", "Patio", "Lave-vaisselle", "Terrasse", "Wi-Fi gratuit", "Vue sur la ville"],
+          "bathroom": "À confirmer",
+          "views": "Jardin, montagne, site d’intérêt, rivière et cour intérieure, ville"
+        },
+        "double-1": {
+          "name": "Chambre double",
+          "description": "Chambre de 25 m² avec un lit double et une salle de bain privée. Elle comprend une kitchenette privée, une télévision à écran plat, un balcon, un patio et une terrasse, avec vue documentée sur le jardin, la montagne, la rivière et la cour intérieure.",
+          "beds": "1 lit double",
+          "size": "25 m²",
+          "priceNote": "2 personnes : PEN 62 · 1 personne : PEN 48. Conditions du petit-déjeuner et d’annulation : à confirmer.",
+          "amenities": ["Kitchenette privée", "Salle de bain privée", "Balcon", "Vues : jardin, montagne, site d’intérêt, rivière et cour intérieure", "Patio", "Lave-vaisselle", "Terrasse", "Wi-Fi gratuit", "Télévision à écran plat"],
+          "bathroom": "Privée",
+          "views": "Jardin, montagne, site d’intérêt, rivière et cour intérieure"
+        },
+        "double-2": {
+          "name": "Chambre double",
+          "description": "Chambre de 25 m² avec un lit double et une salle de bain privée. Elle comprend une kitchenette privée, une télévision à écran plat, un balcon, un patio et une terrasse, avec vue documentée sur le jardin, la montagne, la rivière et la cour intérieure.",
+          "beds": "1 lit double",
+          "size": "25 m²",
+          "priceNote": "2 personnes : PEN 62 · 1 personne : PEN 48. Conditions du petit-déjeuner et d’annulation : à confirmer.",
+          "amenities": ["Kitchenette privée", "Salle de bain privée", "Balcon", "Vues : jardin, montagne, site d’intérêt, rivière et cour intérieure", "Patio", "Lave-vaisselle", "Terrasse", "Wi-Fi gratuit", "Télévision à écran plat"],
+          "bathroom": "Privée",
+          "views": "Jardin, montagne, site d’intérêt, rivière et cour intérieure"
+        },
+        "family-1": {
+          "name": "Chambre familiale avec salle de bain privée",
+          "description": "Chambre de 30 m² avec un lit jumeau, un lit superposé et un canapé-lit. La capacité documentée est de deux personnes maximum. Elle comprend une cuisine privée, une salle de bain privée et le Wi-Fi gratuit.",
+          "beds": "1 lit jumeau + 1 lit superposé + 1 canapé-lit",
+          "size": "30 m²",
+          "priceNote": "2 personnes : PEN 66 · 1 personne : PEN 41. Petit-déjeuner et conditions d’annulation : à confirmer.",
+          "amenities": ["Cuisine privée", "Salle de bain privée", "Wi-Fi gratuit"],
+          "bathroom": "Privée",
+          "views": "À confirmer"
+        },
+        "family-2": {
+          "name": "Chambre familiale avec salle de bain privée",
+          "description": "Chambre de 30 m² avec un lit jumeau, un lit superposé et un canapé-lit. La capacité documentée est de deux personnes maximum. Elle comprend une cuisine privée, une salle de bain privée et le Wi-Fi gratuit.",
+          "beds": "1 lit jumeau + 1 lit superposé + 1 canapé-lit",
+          "size": "30 m²",
+          "priceNote": "2 personnes : PEN 66 · 1 personne : PEN 41. Petit-déjeuner et conditions d’annulation : à confirmer.",
+          "amenities": ["Cuisine privée", "Salle de bain privée", "Wi-Fi gratuit"],
+          "bathroom": "Privée",
+          "views": "À confirmer"
+        },
+        "small-twin": {
+          "name": "Petite chambre à lits jumeaux",
+          "description": "Chambre avec un lit jumeau et un lit double pour deux personnes maximum. Elle dispose d’une salle de bain privée et du Wi-Fi gratuit. La superficie et la vue sont à confirmer.",
+          "beds": "1 lit jumeau + 1 lit double",
+          "size": "À confirmer",
+          "priceNote": "2 personnes : PEN 65 · 1 personne : PEN 57. Petit-déjeuner et conditions d’annulation : à confirmer.",
+          "amenities": ["Salle de bain privée", "Wi-Fi gratuit"],
+          "bathroom": "Privée",
+          "views": "À confirmer"
+        },
+        "female-dorm": {
+          "name": "Dortoir pour femmes",
+          "description": "Dortoir réservé aux femmes de 45 m² avec trois lits jumeaux. Le tarif documenté est par personne. Wi-Fi gratuit ; type de salle de bain et vues à confirmer.",
+          "beds": "3 lits jumeaux",
+          "size": "45 m²",
+          "priceNote": "1 personne : PEN 21. Petit-déjeuner et conditions d’annulation : à confirmer.",
+          "amenities": ["Wi-Fi gratuit"],
+          "bathroom": "À confirmer",
+          "views": "À confirmer"
+        },
+        "bed-dorm": {
+          "name": "Lit dans un dortoir de 8 lits",
+          "description": "Un lit superposé dans un dortoir de huit lits de 45 m². Le tarif est par personne. Les équipements documentés comprennent une cuisine privée, un balcon, un patio, une terrasse et le Wi-Fi gratuit.",
+          "beds": "1 lit superposé",
+          "size": "45 m²",
+          "priceNote": "1 personne : PEN 24. Petit-déjeuner et conditions d’annulation : à confirmer.",
+          "amenities": ["Cuisine privée", "Balcon", "Vues : jardin, montagne, site d’intérêt, rivière et cour intérieure", "Patio", "Lave-vaisselle", "Terrasse", "Wi-Fi gratuit"],
+          "bathroom": "À confirmer",
+          "views": "Jardin, montagne, site d’intérêt, rivière et cour intérieure"
+        }
+      }
+    },
+    "casa-junto-al-rio": {
+      "name": "Casa Junto Al Rio",
+      "zone": "Yanahuara",
+      "category": "Chambres d’hôtes",
+      "address": "Av. Francisco Bolognesi 118-A, Yanahuara, Arequipa, Pérou",
+      "checkIn": "13:00–21:00",
+      "checkOut": "08:00–11:00",
+      "languages": ["À confirmer"],
+      "description": "Des chambres d’hôtes à Yanahuara, avec jardin, terrasse solarium et piscine. À six minutes à pied du Mirador de Yanahuara.",
+      "manager": "À confirmer",
+      "location": "Yanahuara, Arequipa",
+      "highlights": ["Piscine sur le toit, bassin profond et piscine couverte avec vue", "Adapté aux enfants", "Animaux non admis"],
+      "amenities": [
+        "Wi-Fi", "Piscine · zone peu profonde", "Karaoké", "Animations en direct", "Terrasse solarium", "Jardin", "Sauna", "Randonnée", "Vélos",
+        "Navette (en supplément)", "Blanchisserie", "Assistance pour les excursions et billets", "Centre d’affaires", "Réunions et banquets", "Cuisine partagée",
+        "Bouilloire", "Ustensiles de cuisine", "Tables de pique-nique", "Non-fumeurs", "Parking", "Arrivée/départ privés", "Animaux non admis", "Sécurité 24 h/24",
+        "Change de devises", "Détecteurs de fumée", "Extincteurs", "Terrasse dans la chambre (général)", "Service thé/café (général)", "Table à manger (général)",
+        "Presse-pantalon (général)", "Télévision LCD (général)", "Jeux de société (général)", "Aire de jeux pour enfants",
+        "Certaines chambres : télévision satellite, cafetière/bouilloire, réfrigérateur et salle de bain privée"
+      ],
+      "nearby": [
+        { "name": "Église de Cayma", "distance": "450 m" },
+        { "name": "Mirador de Yanahuara", "distance": "6 min à pied" },
+        { "name": "Plaza San Francisco", "distance": "1 km" },
+        { "name": "Plaza de Armas", "distance": "À confirmer" },
+        { "name": "Monastère de Santa Catalina", "distance": "1,1 km" },
+        { "name": "Arrêt La Recoleta", "distance": "À confirmer" }
+      ],
+      "rooms": {
+        "doble-terraza": {
+          "name": "Chambre double avec terrasse",
+          "beds": "1 lit double",
+          "size": "À confirmer",
+          "bathroom": "Privée",
+          "views": "À confirmer",
+          "description": "Chambre proposée avec un lit double pour deux personnes maximum. La fiche proposée comprend une salle de bain privée, une terrasse, une télévision LCD, un service thé/café et un réfrigérateur. Configuration, capacité et équipements à valider.",
+          "priceNote": "À confirmer",
+          "amenities": ["Salle de bain privée", "Terrasse", "Télévision LCD", "Service thé/café", "Réfrigérateur"]
+        },
+        "doble-jardin": {
+          "name": "Chambre double avec vue sur le jardin",
+          "beds": "1 lit double",
+          "size": "À confirmer",
+          "bathroom": "Privée",
+          "views": "Jardin",
+          "description": "Chambre proposée avec un lit double pour deux personnes maximum. La fiche proposée comprend une salle de bain privée, une vue sur le jardin, une télévision satellite et une cafetière/bouilloire. Configuration, capacité et équipements à valider.",
+          "priceNote": "À confirmer",
+          "amenities": ["Salle de bain privée", "Vue sur le jardin", "Télévision satellite", "Cafetière/bouilloire"]
+        },
+        "twin": {
+          "name": "Chambre à lits jumeaux",
+          "beds": "2 lits jumeaux",
+          "size": "À confirmer",
+          "bathroom": "Privée",
+          "views": "À confirmer",
+          "description": "Chambre proposée avec deux lits jumeaux pour deux personnes maximum. La fiche proposée comprend une salle de bain privée, un service thé/café et une table à manger. Configuration, capacité et équipements à valider.",
+          "priceNote": "À confirmer",
+          "amenities": ["Salle de bain privée", "Service thé/café", "Table à manger"]
+        },
+        "familiar": {
+          "name": "Chambre familiale",
+          "beds": "1 lit double + 1 canapé-lit",
+          "size": "À confirmer",
+          "bathroom": "Privée",
+          "views": "À confirmer",
+          "description": "Chambre proposée avec un lit double et un canapé-lit pour quatre personnes maximum. La fiche proposée comprend une salle de bain privée, une télévision LCD, des jeux de société et une aire de jeux pour enfants. Configuration, capacité et équipements à valider.",
+          "priceNote": "À confirmer",
+          "amenities": ["Salle de bain privée", "Télévision LCD", "Jeux de société", "Aire de jeux pour enfants"]
+        },
+        "superior": {
+          "name": "Chambre supérieure avec accès à la piscine",
+          "beds": "1 lit queen size",
+          "size": "À confirmer",
+          "bathroom": "Privée",
+          "views": "Piscine",
+          "description": "Chambre proposée avec un lit queen size pour deux personnes maximum. La fiche proposée comprend une salle de bain privée, une terrasse, une vue sur la piscine, un réfrigérateur et une télévision à écran plat. Configuration, capacité et équipements à valider.",
+          "priceNote": "À confirmer",
+          "amenities": ["Salle de bain privée", "Terrasse", "Vue sur la piscine", "Réfrigérateur", "Télévision à écran plat"]
+        }
+      }
+    },
+    "catarata-capua": {
+      "name": "Catarata Capua",
+      "zone": "Yura",
+      "category": "Glamping",
+      "address": "Catarata Capua, Yura, Pérou (adresse exacte après réservation)",
+      "checkIn": "01:00–18:00",
+      "checkOut": "08:00–11:00",
+      "languages": ["Anglais", "Espagnol", "Français"],
+      "description": "Bungalows tout équipés avec vue sur la montagne à Yura. Jardin, terrasse et petit-déjeuner américain inclus pour un séjour près de la Catarata Capua.",
+      "manager": "À confirmer",
+      "location": "Yura, Arequipa",
+      "highlights": ["Personnel : 8,8 / 10", "Petit-déjeuner américain inclus", "Pas d’internet · pas de parking"],
+      "amenities": [
+        "Piscine", "Chambres non-fumeurs", "Chambres familiales", "Petit-déjeuner américain", "Jardin", "Terrasse", "Animaux gratuits", "Table à manger",
+        "Ustensiles de cuisine", "Bouilloire", "Vue sur la montagne", "Espace repas extérieur", "Barbecue", "Salle de bain privée", "Douche", "Pas d’internet", "Pas de parking"
+      ],
+      "nearby": [
+        { "name": "Aéroport Rodríguez Ballón", "distance": "23 km" },
+        { "name": "Restaurants", "distance": "~19 km" }
+      ],
+      "rooms": {
+        "cabana-1": {
+          "name": "Cabane 1",
+          "description": "Bungalow entier équipé d’un lit jumeau et d’un lit double, pour deux personnes maximum. Il offre une vue sur la montagne, une salle de bain privée et un barbecue. Petit-déjeuner américain inclus, sans carte bancaire requise.",
+          "beds": "1 lit jumeau + 1 lit double",
+          "size": "À confirmer",
+          "priceNote": "2 personnes : PEN 58 non remboursable / PEN 65 flexible. 1 personne : PEN 52 non remboursable / PEN 57 flexible. Petit-déjeuner américain inclus. Aucune carte bancaire requise.",
+          "amenities": ["Bungalow entier", "Vue sur la montagne", "Salle de bain privée", "Barbecue", "Petit-déjeuner américain inclus"],
+          "bathroom": "Privée",
+          "views": "Montagne"
+        },
+        "cabana-2": {
+          "name": "Cabane 2",
+          "description": "Bungalow entier équipé d’un lit jumeau et d’un lit double, pour deux personnes maximum. Il offre une vue sur la montagne, une salle de bain privée et un barbecue. Petit-déjeuner américain inclus, sans carte bancaire requise.",
+          "beds": "1 lit jumeau + 1 lit double",
+          "size": "À confirmer",
+          "priceNote": "2 personnes : PEN 58 non remboursable / PEN 65 flexible. 1 personne : PEN 52 non remboursable / PEN 57 flexible. Petit-déjeuner américain inclus. Aucune carte bancaire requise.",
+          "amenities": ["Bungalow entier", "Vue sur la montagne", "Salle de bain privée", "Barbecue", "Petit-déjeuner américain inclus"],
+          "bathroom": "Privée",
+          "views": "Montagne"
+        },
+        "cabana-3": {
+          "name": "Cabane 3",
+          "description": "Bungalow entier équipé d’un lit jumeau et d’un lit double, pour deux personnes maximum. Il offre une vue sur la montagne, une salle de bain privée et un barbecue. Petit-déjeuner américain inclus, sans carte bancaire requise.",
+          "beds": "1 lit jumeau + 1 lit double",
+          "size": "À confirmer",
+          "priceNote": "2 personnes : PEN 58 non remboursable / PEN 65 flexible. 1 personne : PEN 52 non remboursable / PEN 57 flexible. Petit-déjeuner américain inclus. Aucune carte bancaire requise.",
+          "amenities": ["Bungalow entier", "Vue sur la montagne", "Salle de bain privée", "Barbecue", "Petit-déjeuner américain inclus"],
+          "bathroom": "Privée",
+          "views": "Montagne"
+        }
+      }
+    }
+  },
+  "tours": {
+    "colca": {
+      "name": "Colca, là où volent les condors",
+      "location": "Canyon de Colca",
+      "category": "Nature",
+      "duration": "1 ou 2 jours",
+      "description": "Entre montagnes infinies et villages chargés d’histoire. Une rencontre avec la grandeur des Andes.",
+      "long": "Parcourez la vallée du Colca, ses terrasses agricoles et ses paysages andins. La Cruz del Cóndor offre la possibilité d’observer ces oiseaux dans leur habitat naturel ; les observations dépendent des conditions du jour."
+    },
+    "city-tour": {
+      "name": "Les secrets de la Ville Blanche",
+      "location": "Centre historique",
+      "category": "Culture",
+      "duration": "Demi-journée",
+      "description": "Des rues en sillar, des patios colorés et les histoires que seul un habitant connaît.",
+      "long": "Un parcours au cœur d’Arequipa : la Plaza de Armas, l’architecture coloniale et les abords du monastère de Santa Catalina. Ses murs colorés racontent des siècles d’histoire. Renseignez-vous sur les entrées et visites incluses."
+    },
+    "misti": {
+      "name": "Misti : une aventure en altitude",
+      "location": "Volcan Misti",
+      "category": "Aventure",
+      "duration": "2 jours",
+      "description": "Un défi andin pour celles et ceux qui veulent voir le monde sous un autre angle.",
+      "long": "Une expérience de montagne qui demande une bonne condition physique, une acclimatation et un accompagnement spécialisé. Le Misti culmine à environ {{altitude}} mètres d’altitude. L’itinéraire et le départ sont confirmés selon les conditions météorologiques."
+    },
+    "gastronomia": {
+      "name": "Des saveurs qui racontent des histoires",
+      "location": "Picanterías d’Arequipa",
+      "category": "Gastronomie",
+      "duration": "Demi-journée",
+      "description": "Rocoto relleno, tradition et conversations autour d’une table d’Arequipa.",
+      "long": "Approchez la tradition gastronomique d’Arequipa à travers ses picanterías et ses saveurs emblématiques. Renseignez-vous sur l’itinéraire, les dégustations disponibles et les options pour les besoins alimentaires particuliers."
+    },
+    "salinas": {
+      "name": "Salinas, un autre horizon",
+      "location": "Lagune de Salinas",
+      "category": "Nature",
+      "duration": "1 jour",
+      "description": "Paysages ouverts, volcans et beauté inattendue de l’altiplano.",
+      "long": "Découvrez les paysages de la Réserve nationale de Salinas et Aguada Blanca. L’aspect de la lagune et la présence de la faune changent selon la saison. Renseignez-vous sur les conditions d’accès avant votre visite."
+    }
+  }
+}

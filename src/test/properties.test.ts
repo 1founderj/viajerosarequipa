@@ -1,11 +1,17 @@
-import { describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it } from 'vitest';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { properties, getProperty, POR_CONFIRMAR, WHATSAPP_NUMBER } from '@/data/properties';
 import { buildWhatsAppUrl, roomWhatsAppMessage } from '@/lib/whatsapp';
+import i18n from '@/i18n';
 const hostal = properties[0];
 const casa = properties[1];
 const capua = properties[2];
+
+beforeEach(async () => {
+  await i18n.changeLanguage('es');
+});
+
 describe('Documented property rules', () => {
   it('has 9 Hostal Viajeros rooms', () => expect(hostal?.rooms).toHaveLength(9));
   it('has 5 Casa Junto Al Rio rooms', () => expect(casa?.rooms).toHaveLength(5));
@@ -19,9 +25,9 @@ describe('Documented property rules', () => {
       }
     }
   });
-  it('keeps hostal documented type distribution', () => expect(hostal?.rooms.map(r=>r.name)).toEqual(['Double or Twin Room','Double or Twin Room','Double Room','Double Room','Family Room with Private Bathroom','Family Room with Private Bathroom','Small Twin Room','Female Dormitory Room','Bed in 8-Bed Dormitory Room']));
+  it('keeps hostal documented type distribution', () => expect(hostal?.rooms.map(r=>r.name)).toEqual(['Habitación doble o twin','Habitación doble o twin','Habitación doble','Habitación doble','Habitación familiar con baño privado','Habitación familiar con baño privado','Habitación pequeña con camas twin','Dormitorio femenino','Cama en dormitorio compartido de 8 camas']));
   it('keeps hostal prices', () => expect(hostal?.rooms.map(r=>r.price)).toEqual([48,48,62,62,66,66,65,21,24]));
-  it('keeps family capacity at documented two guests', () => expect(hostal?.rooms.filter(r=>r.name==='Family Room with Private Bathroom').map(r=>r.capacity)).toEqual([2,2]));
+  it('keeps family capacity at documented two guests', () => expect(hostal?.rooms.filter(r=>r.name==='Habitación familiar con baño privado').map(r=>r.capacity)).toEqual([2,2]));
   it('does not invent Casa prices', () => expect(casa?.rooms.map(r=>r.price)).toEqual([undefined,undefined,undefined,undefined,undefined]));
   it('keeps unknown sizes unconfirmed', () => expect(casa?.rooms.map(r=>r.size)).toEqual(Array(5).fill(POR_CONFIRMAR)));
   it('keeps cabin prices', () => expect(capua?.rooms.map(r=>r.price)).toEqual([58,58,58]));
@@ -36,7 +42,7 @@ describe('WhatsApp links', () => {
   it('encodes a room and property with documented price', () => {
     const property=hostal; const room=property?.rooms[0]; if(!property||!room) throw new Error('Missing fixture');
     const url=buildWhatsAppUrl(property.whatsappNumber,roomWhatsAppMessage(property,room));
-    expect(url).toBe('https://wa.me/51999999999?text='+encodeURIComponent('Hola, quiero reservar la habitación *Double or Twin Room* en *Hostal Viajeros Arequipa*.\nFechas: [indicar fechas].\nHuéspedes: [indicar número].\nPrecio publicado: PEN 48.\n¿Está disponible?'));
+    expect(url).toBe('https://wa.me/51999999999?text='+encodeURIComponent('Hola, quiero reservar la habitación *Habitación doble o twin* en *Hostal Viajeros Arequipa*.\nFechas: [indicar fechas].\nHuéspedes: [indicar número].\nPrecio publicado: PEN 48.\n¿Está disponible?'));
   });
   it('requests price for Casa without invented amount', () => {
     const property=casa;const room=property?.rooms[0];if(!property||!room)throw new Error('Missing fixture');
