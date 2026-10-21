@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "defaultTitle": "Viajeros Arequipa",
+    "defaultDescription": "Hostales y experiencias locales en la Ciudad Blanca.",
+    "htmlTitle": "Viajeros Arequipa",
+    "htmlDescription": "Hostales y experiencias locales en la Ciudad Blanca.",
+    "homeTitle": "Hostales & Tours en la Ciudad Blanca",
+    "homeDescription": "Hospédate en Viajeros Arequipa y descubre la Ciudad Blanca. Alojamientos, tours Colca y experiencias con esencia local.",
+    "aboutTitle": "Nuestra esencia local",
+    "aboutDescription": "Conoce Viajeros Arequipa: hospitalidad cercana, identidad arequipeña y experiencias genuinas en la Ciudad Blanca.",
+    "contactTitle": "Contacto y consultas de reserva",
+    "contactDescription": "Planifica tu estancia o tour en Arequipa. Prepara una consulta personalizada de fechas y viajeros con Viajeros Arequipa.",
+    "propertiesTitle": "Alojamientos en Arequipa",
+    "propertiesDescription": "Hostal Viajeros Arequipa, Casa Junto Al Rio y Catarata Capua: habitaciones y cabañas en Centro Histórico, Yanahuara y Yura.",
+    "propertyFallbackTitle": "Alojamiento no disponible",
+    "propertyFallbackDescription": "Consulta nuestros alojamientos en Arequipa.",
+    "toursTitle": "Tours y experiencias en Arequipa",
+    "toursDescription": "Explora tours Colca, Santa Catalina, volcán Misti y gastronomía arequipeña. Encuentra tu aventura con esencia local.",
+    "tourFallbackTitle": "Experiencia",
+    "tourFallbackDescription": "Tours y experiencias locales en Arequipa."
+  },
+  "root": {
+    "notFoundCode": "404",
+    "notFoundTitle": "Page not found",
+    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go home",
+    "errorTitle": "This page didn't load",
+    "errorDesc": "Something went wrong on our end. You can try refreshing or head back home.",
+    "tryAgain": "Try again"
+  },
+  "common": {
+    "toConfirm": "Por confirmar",
+    "priceOnConsult": "Precio a consultar",
+    "rateOnConsult": "Tarifa a consultar",
+    "fromPrice": "Desde {{price}}",
+    "pricePEN": "PEN {{price}}",
+    "goHome": "Ir al inicio",
+    "tryAgain": "Reintentar",
+    "back": "Volver",
+    "close": "Cerrar",
+    "viewDetail": "Ver detalle",
+    "viewProperty": "Ver propiedad"
+  },
+  "nav": {
+    "brandName": "Viajeros Arequipa",
+    "brandCaption": "Historias que se viven",
+    "logoAlt": "Free Walking Tours Arequipa",
+    "logoFooterAlt": "Logo de Arequipa",
+    "home": "Inicio",
+    "properties": "Propiedades",
+    "tours": "Tours y experiencias",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "bookNow": "Reservar ahora",
+    "ariaMainNav": "Navegación principal",
+    "ariaMobileNav": "Navegación móvil",
+    "ariaOpenMenu": "Abrir menú",
+    "ariaCloseMenu": "Cerrar menú"
+  },
+  "footer": {
+    "description": "Hospédate, explora y conecta con la esencia de la Ciudad Blanca. Arequipa, de la mano de su gente.",
+    "colTripsTitle": "Tu próximo viaje",
+    "colTripsProperties": "Nuestros alojamientos",
+    "colTripsTours": "Tours y experiencias",
+    "colTripsBooking": "Consultar una reserva",
+    "colArequipaTitle": "Desde Arequipa",
+    "colArequipaAbout": "Nuestra esencia",
+    "colArequipaContact": "Contacto y preguntas",
+    "cityCountry": "Arequipa, Perú",
+    "copyright": "© 2026 Viajeros Arequipa. Hecho con espíritu local.",
+    "tagline": "La Ciudad Blanca te espera."
+  },
+  "values": {
+    "hospitalityTitle": "Hospitalidad de verdad",
+    "hospitalityText": "Una bienvenida cercana y una experiencia con identidad local.",
+    "localTitle": "Arequipa, con ojos locales",
+    "localText": "Las historias, los sabores y los rincones que hacen especial a nuestra ciudad.",
+    "travelTitle": "Viaja a tu manera",
+    "travelText": "Ciudad, naturaleza o aventura. Tu viaje empieza con lo que te inspira."
+  },
+  "cards": {
+    "propertyAlt": "Imagen referencial de {{name}}",
+    "rateOnConsult": "Tarifa a consultar",
+    "knowLodging": "Conocer el alojamiento",
+    "knowItinerary": "Conoce el itinerario",
+    "exploreExperience": "Explorar experiencia"
+  },
+  "bookingBar": {
+    "propertyLabel": "Tu alojamiento",
+    "propertyPlaceholder": "Elige tu lugar ideal",
+    "arrivalLabel": "Llegada",
+    "arrivalAria": "Fecha de llegada",
+    "departureLabel": "Salida",
+    "departureAria": "Fecha de salida",
+    "guestsLabel": "Viajeros",
+    "traveler_one": "{{count}} viajero",
+    "traveler_other": "{{count}} viajeros",
+    "submit": "Consultar disponibilidad"
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "La Catedral de Arequipa y el volcán Misti bajo el cielo azul",
+      "eyebrow": "Arequipa, Perú · Vive lo auténtico",
+      "brandTitle": "VIAJEROS AREQUIPA",
+      "title": "La Ciudad Blanca.<br/><em>Tu próxima historia.</em>",
+      "intro": "No solo visites Arequipa. Siéntela.<br/>Alojamientos con alma, aventuras inolvidables<br/>y gente local que te hace sentir en casa.",
+      "ctaLodgings": "Encuentra tu alojamiento",
+      "ctaTours": "Explora los tours",
+      "location": "Plaza de Armas · Arequipa",
+      "scroll": "Hay mucho por descubrir"
+    },
+    "lodgings": {
+      "eyebrow": "Quédate un poco más",
+      "title": "Tres lugares. Mil historias.",
+      "viewAll": "Ver todos los alojamientos"
+    },
+    "tours": {
+      "eyebrow": "Más allá de la postal",
+      "title": "Sal a vivir Arequipa.",
+      "intro": "De las calles que cuentan siglos de historia a los paisajes que te dejan sin palabras. Elige tu próxima aventura.",
+      "viewAll": "Todas las experiencias"
+    },
+    "band": {
+      "imageAlt": "Patios de color del Monasterio de Santa Catalina",
+      "eyebrow": "No somos una cadena. Somos de aquí.",
+      "title": "Una ciudad con alma.<br/><em>Gente que la comparte.</em>",
+      "intro": "Nos mueve nuestra tierra, sus historias y la alegría de recibirte. Descubre una Arequipa cercana, genuina y muy nuestra.",
+      "cta": "Conoce nuestra historia"
+    }
+  },
+  "about": {
+    "heroTitle": "De aquí. Para ti.",
+    "heroEyebrow": "Nuestra esencia",
+    "heroDescription": "Creemos que los mejores viajes empiezan con un encuentro auténtico.",
+    "eyebrow": "Viajeros Arequipa",
+    "title": "Compartimos una ciudad.<br/><em>Conectamos historias.</em>",
+    "p1": "Somos viajeros locales apasionados por Arequipa. Nuestro objetivo es ofrecer hospedaje auténtico y experiencias hechas por gente de aquí.",
+    "p2": "A diferencia de las grandes cadenas, valoramos la atención personalizada, las conversaciones sin prisa y las experiencias genuinas. Nos inspira la arquitectura de sillar, la tradición de las picanterías y la vida de nuestros barrios.",
+    "p3": "Queremos una forma de viajar más consciente: conocer a la comunidad, respetar el entorno y llevarte algo más que una fotografía.",
+    "cta": "Conversemos sobre tu viaje",
+    "imageAlt": "Arquitectura y colores de Santa Catalina, Arequipa"
+  },
+  "contact": {
+    "heroTitle": "Tu historia empieza aquí.",
+    "heroEyebrow": "Contacto y reservas",
+    "heroDescription": "Una escapada, una aventura o unos días para desconectar. Cuéntanos qué viaje tienes en mente.",
+    "eyebrow": "Planifica tu viaje",
+    "title": "Hablemos de Arequipa.",
+    "notice": "Estamos preparando nuestro canal de reservas. Por ahora puedes completar y descargar tu consulta; no se envía ni confirma una reserva y no se realizan pagos.",
+    "step1": "01 · Tu viaje",
+    "step2": "02 · Tus datos",
+    "interestLabel": "¿Qué te gustaría reservar?",
+    "interestPlaceholder": "Selecciona una opción",
+    "interestGeneral": "Consulta general",
+    "arrivalLabel": "Llegada o fecha de experiencia",
+    "departureLabel": "Salida (solo alojamiento)",
+    "guestsLabel": "Número de viajeros",
+    "nameLabel": "Nombre completo",
+    "emailLabel": "Correo electrónico",
+    "messageLabel": "Cuéntanos un poco más",
+    "messagePlaceholder": "Preferencias, preguntas o algo especial para tu viaje…",
+    "errorDeparture": "La salida debe ser posterior a la llegada.",
+    "buttonContinue": "Continuar",
+    "buttonPrepare": "Preparar consulta",
+    "buttonBack": "Volver",
+    "prepared": {
+      "title": "Tu consulta está preparada.",
+      "description": "Gracias, {{name}}. Revisa tu viaje y guarda el borrador. <bold>No ha sido enviado.</bold>",
+      "interest": "Alojamiento o experiencia",
+      "datesAndGuests": "Fechas y viajeros",
+      "traveler_one": "{{count}} viajero",
+      "traveler_other": "{{count}} viajeros",
+      "email": "Correo de contacto",
+      "download": "Descargar consulta",
+      "edit": "Editar datos"
+    },
+    "downloadFile": {
+      "header": "CONSULTA DE VIAJE — VIAJEROS AREQUIPA",
+      "name": "Nombre: {{name}}",
+      "email": "Correo: {{email}}",
+      "interest": "Interés: {{interest}}",
+      "arrival": "Llegada / fecha del tour: {{arrival}}",
+      "departure": "Salida: {{departure}}",
+      "notApplicable": "No aplica",
+      "guests": "Viajeros: {{guests}}",
+      "message": "Mensaje: {{message}}",
+      "footer": "Borrador no enviado. Disponibilidad, tarifa y reserva no confirmadas."
+    },
+    "aside": {
+      "eyebrow": "Desde la Ciudad Blanca",
+      "title": "Encuéntranos en Arequipa.",
+      "location": "Arequipa, Perú",
+      "status": "Teléfono, WhatsApp, correo y horarios de atención pendientes de confirmación.",
+      "mapTitle": "Mapa de referencia del centro de Arequipa, no indica la ubicación de un alojamiento",
+      "editorialNote": "Referencia de la ciudad. No corresponde a una dirección confirmada de los alojamientos."
+    },
+    "faq": {
+      "title": "Antes de hacer las maletas.",
+      "q1": "¿Cómo puedo reservar?",
+      "a1": "Selecciona un alojamiento o experiencia y prepara tu consulta con fechas y viajeros. El canal de envío todavía no está habilitado. La reserva solo será válida cuando se confirme disponibilidad y tarifa.",
+      "q2": "¿Cuál es la política de cancelación?",
+      "a2": "Las condiciones de cancelación deben confirmarse con la propuesta de reserva. No hay una política publicada todavía.",
+      "q3": "¿En qué idiomas se realizan los tours?",
+      "a3": "Consulta los idiomas disponibles para tu experiencia y fecha antes de confirmar tu reserva.",
+      "q4": "¿Puedo pagar desde esta página?",
+      "a4": "No. Los pagos en línea todavía no están habilitados y este formulario no realiza ningún cobro."
+    }
+  },
+  "toursIndex": {
+    "heroTitle": "Experiencias que se quedan.",
+    "heroEyebrow": "Explora. Conecta. Recuerda.",
+    "heroDescription": "Arequipa tiene muchas historias. Elige cómo quieres vivir la tuya.",
+    "filters": {
+      "all": "Todas",
+      "culture": "Cultura",
+      "nature": "Naturaleza",
+      "adventure": "Aventura",
+      "gastronomy": "Gastronomía"
+    },
+    "editorialNote": "Itinerarios e imágenes referenciales. Consulta tarifas, guías, idiomas, modalidad y servicios incluidos antes de reservar."
+  },
+  "tourDetail": {
+    "eyebrow": "La aventura te espera",
+    "title": "Más que un recorrido.",
+    "beforeTitle": "Antes de tu experiencia",
+    "beforeDescription": "Consulta el punto de encuentro, transporte, entradas, alimentación, idiomas disponibles y el tamaño del grupo. Te recomendamos llevar protección solar, agua y ropa adecuada para el clima.",
+    "editorialNote": "Propuesta de itinerario e imagen referencial. Operación y tarifas pendientes de confirmación.",
+    "inquiryTitle": "Hagamos lugar a la aventura.",
+    "inquiryDescription": "Elige tu fecha y consulta una propuesta personalizada. Precio y disponibilidad a confirmar.",
+    "inquiryButton": "Consultar este tour"
+  },
+  "propertiesIndex": {
+    "eyebrow": "Centro Histórico · Yanahuara · Yura",
+    "title": "Tu lugar en Arequipa.",
+    "intro": "Tres alojamientos, tres formas de vivir la ciudad y sus paisajes.",
+    "sectionEyebrow": "Encuentra tu estancia",
+    "sectionTitle": "Tres lugares. Mil historias.",
+    "editorialNote": "Fotos de ejemplo. Configuración de habitaciones pendiente de validación; tarifas y disponibilidad sujetas a confirmación.",
+    "photoAlt": "Foto de ejemplo de {{name}}",
+    "cabinCount_one": "{{count}} cabaña",
+    "cabinCount_other": "{{count}} cabañas",
+    "roomCount_one": "{{count}} habitación",
+    "roomCount_other": "{{count}} habitaciones",
+    "viewProperty": "Ver propiedad"
+  },
+  "propertyHero": {
+    "alt": "Vista del alojamiento {{name}}"
+  },
+  "propertyInfo": {
+    "address": "Dirección",
+    "checkInOut": "Entrada / salida",
+    "rating": "Valoración documentada",
+    "reviewCount_one": "{{rating}} / 10 · {{reviewsCount}} reseña",
+    "reviewCount_other": "{{rating}} / 10 · {{reviewsCount}} reseñas",
+    "languages": "Idiomas",
+    "manager": "Gestor"
+  },
+  "propertyPage": {
+    "allProperties": "← Todos los alojamientos",
+    "lodgingEyebrow": "El alojamiento",
+    "lodgingTitle": "Conoce cada rincón.",
+    "photoAlt": "Vista {{index}} de {{name}}",
+    "stayEyebrow": "Tu estancia",
+    "stayTitle": "Todo lo que necesitas saber.",
+    "servicesEyebrow": "Durante tu viaje",
+    "servicesTitle": "Servicios del alojamiento.",
+    "surroundingsEyebrow": "Explora los alrededores",
+    "surroundingsTitle": "Cerca de ti."
+  },
+  "roomCard": {
+    "ariaLabel": "Ver {{name}} · {{id}}",
+    "imageAlt": "Foto de ejemplo de {{name}} en {{propertyName}}",
+    "proposal": "Propuesta",
+    "capacity_one": "Hasta {{count}} persona",
+    "capacity_other": "Hasta {{count}} personas",
+    "viewDetail": "Ver detalle"
+  },
+  "roomModal": {
+    "closeAria": "Cerrar habitación",
+    "imageAlt": "Foto de ejemplo de {{name}}",
+    "viewImageAria": "Ver imagen {{index}}",
+    "thumbAlt": "Miniatura {{index}} de {{name}}",
+    "capacity_one": "Hasta {{count}} persona",
+    "capacity_other": "Hasta {{count}} personas",
+    "factBeds": "Camas",
+    "factSize": "Tamaño",
+    "factMaxCapacity": "Capacidad máxima",
+    "factBathroom": "Baño",
+    "factViews": "Vistas",
+    "resources": "Recursos",
+    "editorialNote": "Fotografías de ejemplo. Tarifas documentadas, sujetas a confirmación para tus fechas. WhatsApp: número de ejemplo pendiente de reemplazar.",
+    "closeButton": "Cerrar"
+  },
+  "roomsSection": {
+    "cabinCount_one": "{{count}} cabaña · {{zone}}",
+    "cabinCount_other": "{{count}} cabañas · {{zone}}",
+    "roomCount_one": "{{count}} habitación · {{zone}}",
+    "roomCount_other": "{{count}} habitaciones · {{zone}}",
+    "title": "Elige tu espacio.",
+    "editorialNote": "Distribución y fichas propuestas pendientes de validación. Fotografías de ejemplo; disponibilidad y tarifas deben confirmarse. El número de WhatsApp todavía es de ejemplo."
+  },
+  "whatsapp": {
+    "buttonText": "Reservar por WhatsApp",
+    "roomMessage": "Hola, quiero reservar la habitación *{{roomName}}* en *{{propertyName}}*.\nFechas: [indicar fechas].\nHuéspedes: [indicar número].\n{{priceText}}\n¿Está disponible?",
+    "publishedPrice": "Precio publicado: PEN {{price}}.",
+    "priceOnConsult": "Precio: a consultar."
+  },
+  "properties": {
+    "hostal-viajeros-arequipa": {
+      "name": "Hostal Viajeros Arequipa",
+      "zone": "Centro Histórico",
+      "category": "Hostal",
+      "address": "Callejón del Solar 101B, 04000 Arequipa, Perú",
+      "description": "Una estancia en el Centro Histórico, a 350 m de la Plaza de Armas. Cocina compartida, terraza, jardín y WiFi gratis para acompañar tus días en Arequipa.",
+      "manager": "Miller",
+      "location": "Centro Histórico, Arequipa"
+    },
+    "casa-junto-al-rio": {
+      "name": "Casa Junto Al Rio",
+      "zone": "Yanahuara",
+      "category": "Bed and Breakfast",
+      "address": "Av. Francisco Bolognesi 118-A, Yanahuara, Arequipa, Perú",
+      "description": "Un Bed and Breakfast en Yanahuara, con jardín, terraza solárium y piscina. A seis minutos a pie del Mirador de Yanahuara.",
+      "location": "Yanahuara, Arequipa"
+    },
+    "catarata-capua": {
+      "name": "Catarata Capua",
+      "zone": "Yura",
+      "category": "Glamping",
+      "address": "Catarata Capua, Yura, Perú (dirección exacta tras reserva)",
+      "description": "Bungalows completos con vistas a la montaña en Yura. Jardín, terraza y desayuno americano incluido para una estancia junto a Catarata Capua.",
+      "location": "Yura, Arequipa"
+    }
+  },
+  "tours": {
+    "colca": {
+      "name": "Colca, donde vuelan los cóndores",
+      "location": "Cañón del Colca",
+      "category": "Naturaleza",
+      "duration": "1 o 2 días",
+      "description": "Entre montañas infinitas y pueblos llenos de historia. Un encuentro con la grandeza de los Andes.",
+      "long": "Recorre el Valle del Colca, sus terrazas agrícolas y sus paisajes andinos. La Cruz del Cóndor ofrece la oportunidad de observar estas aves en su hábitat natural; los avistamientos dependen de las condiciones del día."
+    },
+    "city-tour": {
+      "name": "Los secretos de la Ciudad Blanca",
+      "location": "Centro Histórico",
+      "category": "Cultura",
+      "duration": "Medio día",
+      "description": "Calles de sillar, patios de color y las historias que solo un local conoce.",
+      "long": "Un recorrido por el corazón de Arequipa: la Plaza de Armas, la arquitectura colonial y los alrededores del Monasterio de Santa Catalina. Sus muros de colores cuentan siglos de historia. Consulta las entradas y visitas incluidas."
+    },
+    "misti": {
+      "name": "Misti: una aventura en las alturas",
+      "location": "Volcán Misti",
+      "category": "Aventura",
+      "duration": "2 días",
+      "description": "Un desafío andino para quienes buscan mirar el mundo desde otra perspectiva.",
+      "long": "Una experiencia de montaña que requiere buena condición física, aclimatación y acompañamiento especializado. El Misti alcanza aproximadamente 5.822 metros de altitud. La ruta y la salida se confirman según las condiciones meteorológicas."
+    },
+    "gastronomia": {
+      "name": "Sabores que cuentan historias",
+      "location": "Picanterías de Arequipa",
+      "category": "Gastronomía",
+      "duration": "Medio día",
+      "description": "Rocoto relleno, tradición y conversaciones alrededor de una mesa arequipeña.",
+      "long": "Acércate a la tradición gastronómica de Arequipa a través de sus picanterías y sabores emblemáticos. Consulta el itinerario, las degustaciones disponibles y las opciones para necesidades alimentarias especiales."
+    },
+    "salinas": {
+      "name": "Salinas, un horizonte diferente",
+      "location": "Laguna de Salinas",
+      "category": "Naturaleza",
+      "duration": "1 día",
+      "description": "Paisajes abiertos, volcanes y la belleza inesperada del altiplano.",
+      "long": "Descubre los paisajes de la Reserva Nacional de Salinas y Aguada Blanca. La apariencia de la laguna y la presencia de fauna cambian según la temporada. Consulta las condiciones de acceso antes de tu visita."
+    }
+  }
+}

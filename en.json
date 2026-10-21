@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "defaultTitle": "Viajeros Arequipa",
+    "defaultDescription": "Hostels and local experiences in the White City.",
+    "htmlTitle": "Viajeros Arequipa",
+    "htmlDescription": "Hostels and local experiences in the White City.",
+    "homeTitle": "Hostels & Tours in the White City",
+    "homeDescription": "Stay with Viajeros Arequipa and discover the White City. Accommodation, Colca tours and experiences with a local soul.",
+    "aboutTitle": "Our local spirit",
+    "aboutDescription": "Meet Viajeros Arequipa: warm hospitality, Arequipeño identity and genuine experiences in the White City.",
+    "contactTitle": "Contact and booking inquiries",
+    "contactDescription": "Plan your stay or tour in Arequipa. Prepare a personalized inquiry with your dates and number of travelers for Viajeros Arequipa.",
+    "propertiesTitle": "Places to stay in Arequipa",
+    "propertiesDescription": "Hostal Viajeros Arequipa, Casa Junto Al Rio and Catarata Capua: rooms and cabins in the Historic Center, Yanahuara and Yura.",
+    "propertyFallbackTitle": "Accommodation not available",
+    "propertyFallbackDescription": "Browse our places to stay in Arequipa.",
+    "toursTitle": "Tours and experiences in Arequipa",
+    "toursDescription": "Explore Colca tours, Santa Catalina, Misti volcano and Arequipa’s food scene. Find your adventure with a local soul.",
+    "tourFallbackTitle": "Experience",
+    "tourFallbackDescription": "Local tours and experiences in Arequipa."
+  },
+  "root": {
+    "notFoundCode": "404",
+    "notFoundTitle": "Page not found",
+    "notFoundDesc": "The page you’re looking for doesn’t exist or has been moved.",
+    "goHome": "Go home",
+    "errorTitle": "This page didn’t load",
+    "errorDesc": "Something went wrong on our end. You can try refreshing or head back home.",
+    "tryAgain": "Try again"
+  },
+  "common": {
+    "toConfirm": "To be confirmed",
+    "priceOnConsult": "Price on request",
+    "rateOnConsult": "Rate on request",
+    "fromPrice": "From {{price}}",
+    "pricePEN": "PEN {{price}}",
+    "goHome": "Go to home page",
+    "tryAgain": "Try again",
+    "back": "Back",
+    "close": "Close",
+    "viewDetail": "View details",
+    "viewProperty": "View property"
+  },
+  "nav": {
+    "brandName": "Viajeros Arequipa",
+    "brandCaption": "Stories to live",
+    "logoAlt": "Free Walking Tours Arequipa",
+    "logoFooterAlt": "Arequipa logo",
+    "home": "Home",
+    "properties": "Places to stay",
+    "tours": "Tours & experiences",
+    "about": "About us",
+    "contact": "Contact",
+    "bookNow": "Book now",
+    "ariaMainNav": "Main navigation",
+    "ariaMobileNav": "Mobile navigation",
+    "ariaOpenMenu": "Open menu",
+    "ariaCloseMenu": "Close menu"
+  },
+  "footer": {
+    "description": "Stay, explore and connect with the soul of the White City. Arequipa, hand in hand with its people.",
+    "colTripsTitle": "Your next trip",
+    "colTripsProperties": "Our places to stay",
+    "colTripsTours": "Tours & experiences",
+    "colTripsBooking": "Make a booking inquiry",
+    "colArequipaTitle": "From Arequipa",
+    "colArequipaAbout": "Our essence",
+    "colArequipaContact": "Contact & questions",
+    "cityCountry": "Arequipa, Peru",
+    "copyright": "© 2026 Viajeros Arequipa. Made with a local spirit.",
+    "tagline": "The White City awaits."
+  },
+  "values": {
+    "hospitalityTitle": "Real hospitality",
+    "hospitalityText": "A warm welcome and an experience with a local identity.",
+    "localTitle": "Arequipa through local eyes",
+    "localText": "The stories, flavors and hidden corners that make our city special.",
+    "travelTitle": "Travel your way",
+    "travelText": "City, nature or adventure. Your trip starts with whatever inspires you."
+  },
+  "cards": {
+    "propertyAlt": "Reference image of {{name}}",
+    "rateOnConsult": "Rate on request",
+    "knowLodging": "Discover the stay",
+    "knowItinerary": "See the itinerary",
+    "exploreExperience": "Explore the experience"
+  },
+  "bookingBar": {
+    "propertyLabel": "Your stay",
+    "propertyPlaceholder": "Choose your ideal spot",
+    "arrivalLabel": "Arrival",
+    "arrivalAria": "Arrival date",
+    "departureLabel": "Departure",
+    "departureAria": "Departure date",
+    "guestsLabel": "Travelers",
+    "traveler_one": "{{count}} traveler",
+    "traveler_other": "{{count}} travelers",
+    "submit": "Check availability"
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "Arequipa Cathedral and Misti volcano under a blue sky",
+      "eyebrow": "Arequipa, Peru · Live the authentic",
+      "brandTitle": "VIAJEROS AREQUIPA",
+      "title": "The White City.<br/><em>Your next story.</em>",
+      "intro": "Don’t just visit Arequipa. Feel it.<br/>Stays with soul, unforgettable adventures<br/>and locals who make you feel at home.",
+      "ctaLodgings": "Find your stay",
+      "ctaTours": "Explore the tours",
+      "location": "Plaza de Armas · Arequipa",
+      "scroll": "So much to discover"
+    },
+    "lodgings": {
+      "eyebrow": "Stay a little longer",
+      "title": "Three places. A thousand stories.",
+      "viewAll": "See all places to stay"
+    },
+    "tours": {
+      "eyebrow": "Beyond the postcard",
+      "title": "Go live Arequipa.",
+      "intro": "From streets that tell centuries of history to landscapes that leave you speechless. Choose your next adventure.",
+      "viewAll": "All experiences"
+    },
+    "band": {
+      "imageAlt": "Colorful courtyards of the Santa Catalina Monastery",
+      "eyebrow": "We’re not a chain. We’re from here.",
+      "title": "A city with soul.<br/><em>People who share it.</em>",
+      "intro": "Our land, its stories and the joy of welcoming you drive us. Discover an Arequipa that’s close, genuine and truly ours.",
+      "cta": "Discover our story"
+    }
+  },
+  "about": {
+    "heroTitle": "From here. For you.",
+    "heroEyebrow": "Our essence",
+    "heroDescription": "We believe the best trips begin with a genuine encounter.",
+    "eyebrow": "Viajeros Arequipa",
+    "title": "We share a city.<br/><em>We connect stories.</em>",
+    "p1": "We are local travelers passionate about Arequipa. Our goal is to offer authentic stays and experiences created by people from here.",
+    "p2": "Unlike big chains, we value personal attention, unhurried conversations and genuine experiences. We’re inspired by sillar-stone architecture, the tradition of the picanterías and the life of our neighborhoods.",
+    "p3": "We want a more mindful way of traveling: getting to know the community, respecting the environment and taking home more than a photograph.",
+    "cta": "Let’s talk about your trip",
+    "imageAlt": "Architecture and colors of Santa Catalina, Arequipa"
+  },
+  "contact": {
+    "heroTitle": "Your story starts here.",
+    "heroEyebrow": "Contact & bookings",
+    "heroDescription": "A getaway, an adventure or a few days to unwind. Tell us what trip you have in mind.",
+    "eyebrow": "Plan your trip",
+    "title": "Let’s talk about Arequipa.",
+    "notice": "We’re setting up our booking channel. For now, you can fill in and download your inquiry; no booking is sent or confirmed and no payments are taken.",
+    "step1": "01 · Your trip",
+    "step2": "02 · Your details",
+    "interestLabel": "What would you like to book?",
+    "interestPlaceholder": "Select an option",
+    "interestGeneral": "General inquiry",
+    "arrivalLabel": "Arrival or experience date",
+    "departureLabel": "Departure (accommodation only)",
+    "guestsLabel": "Number of travelers",
+    "nameLabel": "Full name",
+    "emailLabel": "Email address",
+    "messageLabel": "Tell us a little more",
+    "messagePlaceholder": "Preferences, questions or something special for your trip…",
+    "errorDeparture": "Departure must be after arrival.",
+    "buttonContinue": "Continue",
+    "buttonPrepare": "Prepare inquiry",
+    "buttonBack": "Back",
+    "prepared": {
+      "title": "Your inquiry is ready.",
+      "description": "Thank you, {{name}}. Review your trip and save the draft. <bold>It has not been sent.</bold>",
+      "interest": "Stay or experience",
+      "datesAndGuests": "Dates and travelers",
+      "traveler_one": "{{count}} traveler",
+      "traveler_other": "{{count}} travelers",
+      "email": "Contact email",
+      "download": "Download inquiry",
+      "edit": "Edit details"
+    },
+    "downloadFile": {
+      "header": "TRAVEL INQUIRY — VIAJEROS AREQUIPA",
+      "name": "Name: {{name}}",
+      "email": "Email: {{email}}",
+      "interest": "Interest: {{interest}}",
+      "arrival": "Arrival / tour date: {{arrival}}",
+      "departure": "Departure: {{departure}}",
+      "notApplicable": "Not applicable",
+      "guests": "Travelers: {{guests}}",
+      "message": "Message: {{message}}",
+      "footer": "Draft not sent. Availability, rate and booking not confirmed."
+    },
+    "aside": {
+      "eyebrow": "From the White City",
+      "title": "Find us in Arequipa.",
+      "location": "Arequipa, Peru",
+      "status": "Phone, WhatsApp, email and opening hours pending confirmation.",
+      "mapTitle": "Reference map of central Arequipa; it does not show the location of any property",
+      "editorialNote": "City reference. It does not correspond to a confirmed address of the properties."
+    },
+    "faq": {
+      "title": "Before you pack.",
+      "q1": "How can I book?",
+      "a1": "Select a stay or experience and prepare your inquiry with dates and travelers. The sending channel is not yet enabled. A booking is only valid once availability and rate are confirmed.",
+      "q2": "What is the cancellation policy?",
+      "a2": "Cancellation terms must be confirmed with the booking proposal. No policy has been published yet.",
+      "q3": "In which languages are the tours offered?",
+      "a3": "Check the available languages for your experience and date before confirming your booking.",
+      "q4": "Can I pay from this page?",
+      "a4": "No. Online payments are not yet enabled and this form does not charge anything."
+    }
+  },
+  "toursIndex": {
+    "heroTitle": "Experiences that stay with you.",
+    "heroEyebrow": "Explore. Connect. Remember.",
+    "heroDescription": "Arequipa has many stories. Choose how you want to live yours.",
+    "filters": {
+      "all": "All",
+      "culture": "Culture",
+      "nature": "Nature",
+      "adventure": "Adventure",
+      "gastronomy": "Gastronomy"
+    },
+    "editorialNote": "Reference itineraries and images. Check rates, guides, languages, format and included services before booking."
+  },
+  "tourDetail": {
+    "eyebrow": "The adventure awaits",
+    "title": "More than a tour.",
+    "beforeTitle": "Before your experience",
+    "beforeDescription": "Check the meeting point, transport, entrance fees, meals, available languages and group size. We recommend bringing sunscreen, water and clothing suitable for the weather.",
+    "editorialNote": "Proposed itinerary and reference image. Operations and rates pending confirmation.",
+    "inquiryTitle": "Let’s make room for adventure.",
+    "inquiryDescription": "Pick your date and request a personalized proposal. Price and availability to be confirmed.",
+    "inquiryButton": "Inquire about this tour"
+  },
+  "propertiesIndex": {
+    "eyebrow": "Historic Center · Yanahuara · Yura",
+    "title": "Your place in Arequipa.",
+    "intro": "Three places to stay, three ways to experience the city and its landscapes.",
+    "sectionEyebrow": "Find your stay",
+    "sectionTitle": "Three places. A thousand stories.",
+    "editorialNote": "Sample photos. Room setup pending validation; rates and availability subject to confirmation.",
+    "photoAlt": "Sample photo of {{name}}",
+    "cabinCount_one": "{{count}} cabin",
+    "cabinCount_other": "{{count}} cabins",
+    "roomCount_one": "{{count}} room",
+    "roomCount_other": "{{count}} rooms",
+    "viewProperty": "View property"
+  },
+  "propertyHero": {
+    "alt": "View of {{name}}"
+  },
+  "propertyInfo": {
+    "address": "Address",
+    "checkInOut": "Check-in / check-out",
+    "rating": "Documented rating",
+    "reviewCount_one": "{{rating}} / 10 · {{reviewsCount}} review",
+    "reviewCount_other": "{{rating}} / 10 · {{reviewsCount}} reviews",
+    "languages": "Languages",
+    "manager": "Manager"
+  },
+  "propertyPage": {
+    "allProperties": "← All places to stay",
+    "lodgingEyebrow": "The property",
+    "lodgingTitle": "Get to know every corner.",
+    "photoAlt": "View {{index}} of {{name}}",
+    "stayEyebrow": "Your stay",
+    "stayTitle": "Everything you need to know.",
+    "servicesEyebrow": "During your trip",
+    "servicesTitle": "Property services.",
+    "surroundingsEyebrow": "Explore the surroundings",
+    "surroundingsTitle": "Near you."
+  },
+  "roomCard": {
+    "ariaLabel": "View {{name}} · {{id}}",
+    "imageAlt": "Sample photo of {{name}} at {{propertyName}}",
+    "proposal": "Proposal",
+    "capacity_one": "Up to {{count}} person",
+    "capacity_other": "Up to {{count}} people",
+    "viewDetail": "View details"
+  },
+  "roomModal": {
+    "closeAria": "Close room",
+    "imageAlt": "Sample photo of {{name}}",
+    "viewImageAria": "View image {{index}}",
+    "thumbAlt": "Thumbnail {{index}} of {{name}}",
+    "capacity_one": "Up to {{count}} person",
+    "capacity_other": "Up to {{count}} people",
+    "factBeds": "Beds",
+    "factSize": "Size",
+    "factMaxCapacity": "Maximum capacity",
+    "factBathroom": "Bathroom",
+    "factViews": "Views",
+    "resources": "Amenities",
+    "editorialNote": "Sample photographs. Documented rates, subject to confirmation for your dates. WhatsApp: sample number to be replaced.",
+    "closeButton": "Close"
+  },
+  "roomsSection": {
+    "cabinCount_one": "{{count}} cabin · {{zone}}",
+    "cabinCount_other": "{{count}} cabins · {{zone}}",
+    "roomCount_one": "{{count}} room · {{zone}}",
+    "roomCount_other": "{{count}} rooms · {{zone}}",
+    "title": "Choose your space.",
+    "editorialNote": "Proposed layout and room sheets pending validation. Sample photographs; availability and rates must be confirmed. The WhatsApp number is still a sample."
+  },
+  "whatsapp": {
+    "buttonText": "Book via WhatsApp",
+    "roomMessage": "Hello, I would like to book the room *{{roomName}}* at *{{propertyName}}*.\nDates: [enter dates].\nGuests: [enter number].\n{{priceText}}\nIs it available?",
+    "publishedPrice": "Published price: PEN {{price}}.",
+    "priceOnConsult": "Price: on request."
+  },
+  "properties": {
+    "hostal-viajeros-arequipa": {
+      "name": "Hostal Viajeros Arequipa",
+      "zone": "Historic Center",
+      "category": "Hostel",
+      "address": "Callejón del Solar 101B, 04000 Arequipa, Peru",
+      "description": "A stay in the Historic Center, 350 m from the Plaza de Armas. Shared kitchen, terrace, garden and free Wi-Fi to go with your days in Arequipa.",
+      "manager": "Miller",
+      "location": "Historic Center, Arequipa"
+    },
+    "casa-junto-al-rio": {
+      "name": "Casa Junto Al Rio",
+      "zone": "Yanahuara",
+      "category": "Bed and Breakfast",
+      "address": "Av. Francisco Bolognesi 118-A, Yanahuara, Arequipa, Peru",
+      "description": "A bed and breakfast in Yanahuara with a garden, sun terrace and swimming pool. Six minutes on foot from the Mirador de Yanahuara.",
+      "location": "Yanahuara, Arequipa"
+    },
+    "catarata-capua": {
+      "name": "Catarata Capua",
+      "zone": "Yura",
+      "category": "Glamping",
+      "address": "Catarata Capua, Yura, Peru (exact address provided after booking)",
+      "description": "Fully equipped bungalows with mountain views in Yura. Garden, terrace and American breakfast included for a stay by Catarata Capua.",
+      "location": "Yura, Arequipa"
+    }
+  },
+  "tours": {
+    "colca": {
+      "name": "Colca, where the condors fly",
+      "location": "Colca Canyon",
+      "category": "Nature",
+      "duration": "1 or 2 days",
+      "description": "Between endless mountains and villages full of history. An encounter with the grandeur of the Andes.",
+      "long": "Explore the Colca Valley, its agricultural terraces and Andean landscapes. The Cruz del Cóndor viewpoint offers the chance to watch these birds in their natural habitat; sightings depend on the conditions of the day."
+    },
+    "city-tour": {
+      "name": "Secrets of the White City",
+      "location": "Historic Center",
+      "category": "Culture",
+      "duration": "Half day",
+      "description": "Sillar-stone streets, colorful courtyards and the stories only a local knows.",
+      "long": "A walk through the heart of Arequipa: the Plaza de Armas, colonial architecture and the surroundings of the Santa Catalina Monastery. Its colorful walls tell centuries of history. Check which entrance fees and visits are included."
+    },
+    "misti": {
+      "name": "Misti: an adventure high above",
+      "location": "Misti Volcano",
+      "category": "Adventure",
+      "duration": "2 days",
+      "description": "An Andean challenge for those who want to see the world from a different perspective.",
+      "long": "A mountain experience that requires good physical fitness, acclimatization and specialized guidance. Misti reaches approximately 5,822 meters in altitude. The route and departure are confirmed according to weather conditions."
+    },
+    "gastronomia": {
+      "name": "Flavors that tell stories",
+      "location": "Arequipa’s picanterías",
+      "category": "Gastronomy",
+      "duration": "Half day",
+      "description": "Rocoto relleno, tradition and conversations around an Arequipa table.",
+      "long": "Get close to Arequipa’s culinary tradition through its picanterías and signature flavors. Check the itinerary, the tastings available and the options for special dietary needs."
+    },
+    "salinas": {
+      "name": "Salinas, a different horizon",
+      "location": "Salinas Lagoon",
+      "category": "Nature",
+      "duration": "1 day",
+      "description": "Open landscapes, volcanoes and the unexpected beauty of the altiplano.",
+      "long": "Discover the landscapes of the Salinas and Aguada Blanca National Reserve. The look of the lagoon and the presence of wildlife change with the season. Check access conditions before your visit."
+    }
+  }
+}
