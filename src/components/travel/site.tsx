@@ -4,6 +4,7 @@ import { ArrowUpRight, ArrowRight, Menu, X, ChevronDown, MapPin, Heart, Mountain
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import logoImg from '@/assets/logo.jpg';
+import freeWalkingTourPdf from '@/assets/Free-Walking-Tour-Viajeros-Arequipa.pdf';
 import { images } from '@/lib/travel-data';
 
 const logo = { url: logoImg };
@@ -17,6 +18,7 @@ export function Site({ children }: { children: ReactNode }) {
   const navigation = [
     { to: '/' as const, label: t('nav.home') },
     { to: '/propiedades' as const, label: t('nav.properties') },
+    { href: freeWalkingTourPdf, label: t('nav.freeWalkingTour') },
     { to: '/tours' as const, label: t('nav.tours') },
     { to: '/nosotros' as const, label: t('nav.about') },
     { to: '/contacto' as const, label: t('nav.contact') },
@@ -46,11 +48,17 @@ export function Site({ children }: { children: ReactNode }) {
             </span>
           </Link>
           <nav className="nav" aria-label={t('nav.ariaMainNav')}>
-            {navigation.map((n) => (
-              <Link key={n.to} to={n.to} className={path === n.to ? 'active' : ''}>
-                {n.label}
-              </Link>
-            ))}
+            {navigation.map((n) =>
+              'href' in n ? (
+                <a key={n.href} href={n.href} target="_blank" rel="noopener noreferrer">
+                  {n.label}
+                </a>
+              ) : (
+                <Link key={n.to} to={n.to} className={path === n.to ? 'active' : ''}>
+                  {n.label}
+                </Link>
+              ),
+            )}
           </nav>
           <div className="header-actions">
             <div className="relative inline-block">
@@ -99,11 +107,23 @@ export function Site({ children }: { children: ReactNode }) {
         </div>
         {open && (
           <nav className="menu-panel" aria-label={t('nav.ariaMobileNav')}>
-            {navigation.map((n) => (
-              <Link key={n.to} to={n.to} onClick={() => setOpen(false)}>
-                {n.label}
-              </Link>
-            ))}
+            {navigation.map((n) =>
+              'href' in n ? (
+                <a
+                  key={n.href}
+                  href={n.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                >
+                  {n.label}
+                </a>
+              ) : (
+                <Link key={n.to} to={n.to} onClick={() => setOpen(false)}>
+                  {n.label}
+                </Link>
+              ),
+            )}
           </nav>
         )}
       </header>

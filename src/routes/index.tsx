@@ -1,11 +1,13 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowUpRight, ArrowRight, ArrowDown, MapPin } from 'lucide-react';
+import { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '@/i18n';
 import { Site, SectionHeading, PropertyCard, TourCard, Values } from '@/components/travel/site';
 import { BookingBar } from '@/components/travel/booking-bar';
 import { Button } from '@/components/ui/button';
 import { images, properties, tours, pageHead } from '@/lib/travel-data';
+import freeWalkingTourPdf from '@/assets/Free-Walking-Tour-Viajeros-Arequipa.pdf';
 
 export const Route = createFileRoute('/')({
   head: () => pageHead(i18n.t('meta.homeTitle'), i18n.t('meta.homeDescription')),
@@ -14,33 +16,51 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   const { t } = useTranslation();
+  const [activeSlide, setActiveSlide] = useState(0);
+  const isWalkingTourSlide = activeSlide === 1;
 
   return (
     <Site>
       <section className="hero">
         <img
-          src={images.arequipa}
-          alt={t('home.hero.imageAlt')}
+          src={isWalkingTourSlide ? '/images/general/arequipa6.jpg' : images.arequipa}
+          alt={t(isWalkingTourSlide ? 'home.hero.walkingTour.imageAlt' : 'home.hero.imageAlt')}
           className="hero-image"
           width="1920"
           height="1024"
-          fetchPriority="high"
+          fetchPriority={activeSlide === 0 ? 'high' : 'auto'}
         />
         <div className="page-width hero-content reveal">
-          <div className="eyebrow">{t('home.hero.eyebrow')}</div>
+          <div className="eyebrow">
+            {t(isWalkingTourSlide ? 'home.hero.walkingTour.eyebrow' : 'home.hero.eyebrow')}
+          </div>
           <h1>
             <span className="hero-brand-title">{t('home.hero.brandTitle')}</span>
-            <Trans i18nKey="home.hero.title" components={{ br: <br />, em: <em /> }} />
+            <Trans
+              i18nKey={isWalkingTourSlide ? 'home.hero.walkingTour.title' : 'home.hero.title'}
+              components={{ br: <br />, em: <em /> }}
+            />
           </h1>
           <p className="intro">
-            <Trans i18nKey="home.hero.intro" components={{ br: <br /> }} />
+            <Trans
+              i18nKey={isWalkingTourSlide ? 'home.hero.walkingTour.intro' : 'home.hero.intro'}
+              components={{ br: <br /> }}
+            />
           </p>
           <div className="hero-buttons">
-            <Button asChild variant="hero" size="lg">
-              <Link to="/propiedades">
-                {t('home.hero.ctaLodgings')} <ArrowUpRight />
-              </Link>
-            </Button>
+            {isWalkingTourSlide ? (
+              <Button asChild variant="hero" size="lg">
+                <a href={freeWalkingTourPdf} target="_blank" rel="noopener noreferrer">
+                  {t('home.hero.walkingTour.ctaPdf')} <ArrowUpRight />
+                </a>
+              </Button>
+            ) : (
+              <Button asChild variant="hero" size="lg">
+                <Link to="/propiedades">
+                  {t('home.hero.ctaLodgings')} <ArrowUpRight />
+                </Link>
+              </Button>
+            )}
             <Button asChild variant="glass" size="lg">
               <Link to="/tours">
                 {t('home.hero.ctaTours')} <ArrowRight />
@@ -56,10 +76,27 @@ function Home() {
           <a href="#alojamientos" className="hero-scroll">
             {t('home.hero.scroll')} <ArrowDown size={17} />
           </a>
-          <span className="hero-count">
-            01 <span />
-            <b>03</b>
-          </span>
+          <div className="hero-count" role="group" aria-label={t('home.hero.slideNavigation')}>
+            <button
+              type="button"
+              className="hero-slide-button"
+              aria-pressed={activeSlide === 0}
+              aria-label={t('home.hero.showMainSlide')}
+              onClick={() => setActiveSlide(0)}
+            >
+              01
+            </button>
+            <span />
+            <button
+              type="button"
+              className="hero-slide-button"
+              aria-pressed={isWalkingTourSlide}
+              aria-label={t('home.hero.showWalkingTourSlide')}
+              onClick={() => setActiveSlide(1)}
+            >
+              02
+            </button>
+          </div>
         </div>
       </section>
 
