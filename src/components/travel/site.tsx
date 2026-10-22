@@ -23,6 +23,13 @@ export function Site({ children }: { children: ReactNode }) {
     { to: '/nosotros' as const, label: t('nav.about') },
     { to: '/contacto' as const, label: t('nav.contact') },
   ];
+  const socialLinks = [
+    { name: 'YouTube', handle: '@viajerosarequipa3802', href: 'https://www.youtube.com/@viajerosarequipa3802' },
+    { name: 'Instagram', handle: '@hostalviajerosarequipa', href: 'https://www.instagram.com/hostalviajerosarequipa/' },
+    { name: 'Instagram', handle: '@yas_el_dulce', href: 'https://www.instagram.com/yas_el_dulce/' },
+    { name: 'TikTok', handle: '@yasdelacruz0', href: 'https://www.tiktok.com/@yasdelacruz0' },
+    { name: 'Facebook', handle: 'Viajeros Arequipa', href: 'https://www.facebook.com/p/Viajeros-Arequipa-100063787502383/' },
+  ];
 
   const currentLang = (i18n.resolvedLanguage || i18n.language || 'es').split('-')[0] || 'es';
   const languages = [
@@ -154,6 +161,16 @@ export function Site({ children }: { children: ReactNode }) {
               <span>
                 {t('footer.cityCountry')} <MapPin size={12} className="inline" />
               </span>
+            </div>
+            <div className="footer-links footer-social-links">
+              <h3>{t('footer.socialTitle')}</h3>
+              {socialLinks.map(({ name, handle, href }) => (
+                <a key={href} href={href} target="_blank" rel="noopener noreferrer">
+                  <span>{name}</span>
+                  <span>{handle}</span>
+                  <ArrowUpRight size={14} aria-hidden="true" />
+                </a>
+              ))}
             </div>
           </div>
           <div className="footer-bottom">

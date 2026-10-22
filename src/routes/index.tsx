@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowUpRight, ArrowRight, ArrowDown, MapPin } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '@/i18n';
 import { Site, SectionHeading, PropertyCard, TourCard, Values } from '@/components/travel/site';
@@ -18,6 +18,14 @@ function Home() {
   const { t } = useTranslation();
   const [activeSlide, setActiveSlide] = useState(0);
   const isWalkingTourSlide = activeSlide === 1;
+
+  useEffect(() => {
+    const slideInterval = window.setInterval(() => {
+      setActiveSlide((currentSlide) => (currentSlide + 1) % 2);
+    }, 3000);
+
+    return () => window.clearInterval(slideInterval);
+  }, []);
 
   return (
     <Site>
