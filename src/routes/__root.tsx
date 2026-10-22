@@ -10,6 +10,7 @@ import {
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
+import { FloatingBookingButton } from "../components/travel/FloatingBookingButton";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -101,6 +102,7 @@ function RootComponent() {
       <HeadContent />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <FloatingBookingButton />
     </QueryClientProvider>
   );
 }
